@@ -1,3 +1,5 @@
 .vs
 Blaze.vcxproj.user
 x64
+render/
+geo/*.part
