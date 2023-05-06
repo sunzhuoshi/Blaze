@@ -73,7 +73,7 @@ struct SceneSettings {
     int lightCount;
     float lightExposure[10]; // static maximum number of lights in scene
     float lightIntensity[10]; // static maximum number of lights in scene
-    uint lightSamples[10]; // static maximum number of lights in scene
+    unsigned int lightSamples[10]; // static maximum number of lights in scene
     float3 lightDir[10]; // static maximum number of lights in scene
     float3 lightColor[10]; // static maximum number of lights in scene
 

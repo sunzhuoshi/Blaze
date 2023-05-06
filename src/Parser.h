@@ -33,7 +33,7 @@ freely, subject to the following restrictions:
 #include "../thirdparty/rapidjson/document.h"
 #include "../thirdparty/rapidjson/writer.h"
 #include "../thirdparty/rapidjson/stringbuffer.h"
-
+#include "utils/helper_platform.h"
 
 class Parser {
 
@@ -41,7 +41,7 @@ public:
     static void sceneParse(SceneSettings *scene, const char *sceneFile) {
 
         char actualpath [256];
-        realpath(sceneFile, actualpath);
+        realPath(sceneFile, actualpath, _countof(actualpath));
         strcpy(scene->sceneDir, getDirPath(actualpath).c_str());
 
         std::ifstream t(sceneFile);

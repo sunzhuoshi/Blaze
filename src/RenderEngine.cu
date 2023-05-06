@@ -375,7 +375,7 @@ void RenderEngine::writeToDisk() {
     sprintf(filename, "%s/%s_%04d.%s", mSceneDir.c_str(), subStrName.c_str(), mTmr->iter, subStrExt.c_str());
 
     std::string renderDir(Parser::getDirPath(filename));
-    mkdir(renderDir.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+    mkDir775(renderDir.c_str());
 
     if (subStrExt == "ppm") {
 

@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{0cc04248-6d85-4ed7-b8f4-bea5554a5408}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils">
+      <UniqueIdentifier>{7e640dfc-20ad-4aba-a04c-166420a5c430}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty">
+      <UniqueIdentifier>{67895493-af58-4d42-a0c6-84e062a12ffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\cuda-noise">
+      <UniqueIdentifier>{02040b9b-ebf6-48ad-80ef-873a4a493843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\lodepng">
+      <UniqueIdentifier>{23ea24ed-142b-492d-9f62-6402902146df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\rapidjson">
+      <UniqueIdentifier>{2c5bb6b7-ca3e-4e51-8ebe-94f79e010306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\rapidjson\error">
+      <UniqueIdentifier>{3bc5fdc5-0425-4d9e-b1be-55274e933ec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\rapidjson\internal">
+      <UniqueIdentifier>{e6d50b55-c0d2-4bbb-b2ce-14ac4bca6f76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\rapidjson\msinttypes">
+      <UniqueIdentifier>{5357e576-7f77-45e2-aefa-98f554dd67b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\tinyexr">
+      <UniqueIdentifier>{0d056b56-1d3f-4915-988a-781dac13827a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="houdini">
+      <UniqueIdentifier>{36ea792c-b55e-465c-afbc-3c1421f6d78d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="geo">
+      <UniqueIdentifier>{b171858d-1111-4281-a173-fbcf0f2d8677}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="img">
+      <UniqueIdentifier>{389825ad-2faa-4ebc-9b2b-177957913afa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scenes">
+      <UniqueIdentifier>{f2eaba2f-c9f0-4824-b6d1-f45c0f2f0ed4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Camera.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ColorRamp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FluidSolver.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Grid.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Light.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Logger.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Parser.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ray.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RenderEngine.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SceneSettings.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shader.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Timer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Volume.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\helper_cuda.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\helper_math.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\helper_string.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\cuda-noise\cuda_noise.cuh">
+      <Filter>thirdparty\cuda-noise</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\lodepng\lodepng.h">
+      <Filter>thirdparty\lodepng</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\allocators.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\cursorstreamwrapper.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\document.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\encodedstream.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\encodings.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\filereadstream.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\filewritestream.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\fwd.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\istreamwrapper.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\memorybuffer.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\memorystream.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\ostreamwrapper.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\pointer.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\prettywriter.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\rapidjson.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\reader.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\schema.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\stream.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\stringbuffer.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\writer.h">
+      <Filter>thirdparty\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\error\en.h">
+      <Filter>thirdparty\rapidjson\error</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\error\error.h">
+      <Filter>thirdparty\rapidjson\error</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\internal\biginteger.h">
+      <Filter>thirdparty\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\internal\clzll.h">
+      <Filter>thirdparty\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\internal\diyfp.h">
+      <Filter>thirdparty\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\internal\dtoa.h">
+      <Filter>thirdparty\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\internal\ieee754.h">
+      <Filter>thirdparty\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\internal\itoa.h">
+      <Filter>thirdparty\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\internal\meta.h">
+      <Filter>thirdparty\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\internal\pow10.h">
+      <Filter>thirdparty\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\internal\regex.h">
+      <Filter>thirdparty\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\internal\stack.h">
+      <Filter>thirdparty\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\internal\strfunc.h">
+      <Filter>thirdparty\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\internal\strtod.h">
+      <Filter>thirdparty\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\internal\swap.h">
+      <Filter>thirdparty\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\msinttypes\inttypes.h">
+      <Filter>thirdparty\rapidjson\msinttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidjson\msinttypes\stdint.h">
+      <Filter>thirdparty\rapidjson\msinttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\tinyexr\tinyexr.h">
+      <Filter>thirdparty\tinyexr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\helper_platform.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="src\FluidSolver.cu">
+      <Filter>src</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\main.cu">
+      <Filter>src</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\RenderEngine.cu">
+      <Filter>src</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="thirdparty\README.md">
+      <Filter>thirdparty</Filter>
+    </None>
+    <None Include="houdini\Blaze_demoScenes_v01.hipnc">
+      <Filter>houdini</Filter>
+    </None>
+    <None Include="houdini\BlazeSceneExport.hdanc">
+      <Filter>houdini</Filter>
+    </None>
+    <None Include="geo\README.md">
+      <Filter>geo</Filter>
+    </None>
+    <None Include="scenes\explosion.blz">
+      <Filter>scenes</Filter>
+    </None>
+    <None Include="scenes\fireDebris.blz">
+      <Filter>scenes</Filter>
+    </None>
+    <None Include="scenes\groundFire.blz">
+      <Filter>scenes</Filter>
+    </None>
+    <None Include="scenes\rocketLaunch.blz">
+      <Filter>scenes</Filter>
+    </None>
+    <None Include="scenes\smokePlume.blz">
+      <Filter>scenes</Filter>
+    </None>
+    <None Include="scenes\tornado.blz">
+      <Filter>scenes</Filter>
+    </None>
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="thirdparty\lodepng\lodepng.cpp">
+      <Filter>thirdparty\lodepng</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="img\hda.jpg">
+      <Filter>img</Filter>
+    </Image>
+    <Image Include="img\teaser.jpg">
+      <Filter>img</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

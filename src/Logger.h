@@ -53,7 +53,7 @@ public:
         std::string logDir(sceneDir + "/../logs/");
         mLogFile = logDir + "log_" + sceneName + "_" + getCurrentDateTime("now") + ".txt";
 
-        mkdir(logDir.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+        mkDir775(logDir.c_str());
     }
 
     void append(std::string logMsg){
