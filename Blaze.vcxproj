@@ -75,24 +75,7 @@
     <CudaCompile Include="src\RenderEngine.cu" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="geo\README.md" />
-    <None Include="houdini\BlazeSceneExport.hdanc" />
-    <None Include="houdini\Blaze_demoScenes_v01.hipnc" />
-    <None Include="README.md" />
-    <None Include="scenes\explosion.blz" />
-    <None Include="scenes\fireDebris.blz" />
-    <None Include="scenes\groundFire.blz" />
-    <None Include="scenes\rocketLaunch.blz" />
-    <None Include="scenes\smokePlume.blz" />
-    <None Include="scenes\tornado.blz" />
-    <None Include="thirdparty\README.md" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="thirdparty\lodepng\lodepng.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="img\hda.jpg" />
-    <Image Include="img\teaser.jpg" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D406FC62-4E0A-40F5-8C03-BD1ABA3E8E68}</ProjectGuid>

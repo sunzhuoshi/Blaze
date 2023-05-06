@@ -31,18 +31,6 @@
     <Filter Include="thirdparty\tinyexr">
       <UniqueIdentifier>{0d056b56-1d3f-4915-988a-781dac13827a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="houdini">
-      <UniqueIdentifier>{36ea792c-b55e-465c-afbc-3c1421f6d78d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="geo">
-      <UniqueIdentifier>{b171858d-1111-4281-a173-fbcf0f2d8677}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="img">
-      <UniqueIdentifier>{389825ad-2faa-4ebc-9b2b-177957913afa}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="scenes">
-      <UniqueIdentifier>{f2eaba2f-c9f0-4824-b6d1-f45c0f2f0ed4}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Camera.h">
@@ -229,49 +217,8 @@
     </CudaCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="thirdparty\README.md">
-      <Filter>thirdparty</Filter>
-    </None>
-    <None Include="houdini\Blaze_demoScenes_v01.hipnc">
-      <Filter>houdini</Filter>
-    </None>
-    <None Include="houdini\BlazeSceneExport.hdanc">
-      <Filter>houdini</Filter>
-    </None>
-    <None Include="geo\README.md">
-      <Filter>geo</Filter>
-    </None>
-    <None Include="scenes\explosion.blz">
-      <Filter>scenes</Filter>
-    </None>
-    <None Include="scenes\fireDebris.blz">
-      <Filter>scenes</Filter>
-    </None>
-    <None Include="scenes\groundFire.blz">
-      <Filter>scenes</Filter>
-    </None>
-    <None Include="scenes\rocketLaunch.blz">
-      <Filter>scenes</Filter>
-    </None>
-    <None Include="scenes\smokePlume.blz">
-      <Filter>scenes</Filter>
-    </None>
-    <None Include="scenes\tornado.blz">
-      <Filter>scenes</Filter>
-    </None>
-    <None Include="README.md" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="thirdparty\lodepng\lodepng.cpp">
       <Filter>thirdparty\lodepng</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="img\hda.jpg">
-      <Filter>img</Filter>
-    </Image>
-    <Image Include="img\teaser.jpg">
-      <Filter>img</Filter>
-    </Image>
   </ItemGroup>
 </Project>
