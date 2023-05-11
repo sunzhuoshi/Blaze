@@ -1,0 +1,1814 @@
+---
+MainSourceFile:  'd:\github\blaze\migration\src\utils\helper_cuda.h'
+Replacements:
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          650
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\r\n#include <dpct/dpct.hpp>\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          1076
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG #ifdef __DRIVER_TYPES_H__*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          1083
+    Length:          18
+    ReplacementText: __DPCT_HPP__
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          1103
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG static const char *_cudaGetErrorEnum(cudaError_t error) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          1140
+    Length:          11
+    ReplacementText: 'dpct::err0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          1162
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   return cudaGetErrorName(error);*/\r\n  /*\r\n  DPCT1009:26: SYCL uses exceptions to report errors and does not use the error codes. The original code was commented out and a warning string was inserted. You need to rewrite this code.\r\n  */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          1171
+    Length:          23
+    ReplacementText: '"cudaGetErrorName is not supported"/*cudaGetErrorName(error)*/'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6132
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG static const char *_cudaGetErrorEnum(curandStatus_t error) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6169
+    Length:          14
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6214
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     case CURAND_STATUS_SUCCESS:*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6223
+    Length:          21
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6288
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     case CURAND_STATUS_VERSION_MISMATCH:*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6297
+    Length:          30
+    ReplacementText: '100'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6380
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     case CURAND_STATUS_NOT_INITIALIZED:*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6389
+    Length:          29
+    ReplacementText: '101'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6470
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     case CURAND_STATUS_ALLOCATION_FAILED:*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6479
+    Length:          31
+    ReplacementText: '102'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6564
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     case CURAND_STATUS_TYPE_ERROR:*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6573
+    Length:          24
+    ReplacementText: '103'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6644
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     case CURAND_STATUS_OUT_OF_RANGE:*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6653
+    Length:          26
+    ReplacementText: '104'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6728
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     case CURAND_STATUS_LENGTH_NOT_MULTIPLE:*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6737
+    Length:          33
+    ReplacementText: '105'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6826
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     case CURAND_STATUS_DOUBLE_PRECISION_REQUIRED:*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6835
+    Length:          39
+    ReplacementText: '106'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6936
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     case CURAND_STATUS_LAUNCH_FAILURE:*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          6945
+    Length:          28
+    ReplacementText: '201'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          7024
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     case CURAND_STATUS_PREEXISTING_FAILURE:*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          7033
+    Length:          33
+    ReplacementText: '202'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          7122
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     case CURAND_STATUS_INITIALIZATION_FAILED:*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          7131
+    Length:          35
+    ReplacementText: '203'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          7224
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     case CURAND_STATUS_ARCH_MISMATCH:*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          7233
+    Length:          27
+    ReplacementText: '204'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          7310
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     case CURAND_STATUS_INTERNAL_ERROR:*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          7319
+    Length:          28
+    ReplacementText: '999'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          15066
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG #ifdef __DRIVER_TYPES_H__*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          15073
+    Length:          18
+    ReplacementText: __DPCT_HPP__
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          15115
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG #define DEVICE_RESET cudaDeviceReset();*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          15136
+    Length:          17
+    ReplacementText: 'dpct::get_current_device().reset()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          15356
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   if (result) {\r\n    fprintf(stderr, \"CUDA error at %s:%d code=%d(%s) \\\"%s\\\" \\n\", file, line,\r\n            static_cast<unsigned int>(result), _cudaGetErrorEnum(result), func);\r\n    DEVICE_RESET\r\n    \r\n    exit(EXIT_FAILURE);\r\n  }*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          15358
+    Length:          280
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          15645
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG #ifdef __DRIVER_TYPES_H__*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          15652
+    Length:          18
+    ReplacementText: __DPCT_HPP__
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          16128
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   cudaError_t err = cudaGetLastError();*/\r\n  /*\r\n  DPCT1010:27: SYCL uses exceptions to report errors and does not use the error codes. The call was replaced with 0. You need to rewrite this code.\r\n  */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          16130
+    Length:          11
+    ReplacementText: 'dpct::err0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          16148
+    Length:          18
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          16171
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   if (cudaSuccess != err) {\r\n    fprintf(stderr,\r\n            \"%s(%i) : getLastCudaError() CUDA error :\"\r\n            \" %s : (%d) %s.\\n\",\r\n            file, line, errorMessage, static_cast<int>(err),\r\n            cudaGetErrorString(err));\r\n    DEVICE_RESET\r\n    exit(EXIT_FAILURE);\r\n  }*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          16173
+    Length:          284
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          16802
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   cudaError_t err = cudaGetLastError();*/\r\n  /*\r\n  DPCT1010:29: SYCL uses exceptions to report errors and does not use the error codes. The call was replaced with 0. You need to rewrite this code.\r\n  */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          16804
+    Length:          11
+    ReplacementText: 'dpct::err0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          16822
+    Length:          18
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          16845
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   if (cudaSuccess != err) {\r\n    fprintf(stderr,\r\n            \"%s(%i) : getLastCudaError() CUDA error :\"\r\n            \" %s : (%d) %s.\\n\",\r\n            file, line, errorMessage, static_cast<int>(err),\r\n            cudaGetErrorString(err));\r\n  }*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          16847
+    Length:          241
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          17558
+    Length:          0
+    ReplacementText: ' dpct_type_721633'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          18572
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG #ifdef __CUDA_RUNTIME_H__*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          18579
+    Length:          18
+    ReplacementText: __DPCT_HPP__
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          18702
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   checkCudaErrors(cudaGetDeviceCount(&device_count));*/\r\n  /*\r\n  DPCT1003:31: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\r\n  */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          18720
+    Length:          33
+    ReplacementText: '(device_count = dpct::dev_mgr::instance().device_count(), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          19328
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   cudaDeviceProp deviceProp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          19330
+    Length:          14
+    ReplacementText: 'dpct::device_info'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          19358
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   checkCudaErrors(cudaGetDeviceProperties(&deviceProp, devID));*/\r\n  /*\r\n  DPCT1003:32: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\r\n  */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          19376
+    Length:          23
+    ReplacementText: '(dpct::dev_mgr::instance().get_device'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          19400
+    Length:          13
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          19419
+    Length:          0
+    ReplacementText: '.get_device_info(deviceProp), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          19425
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   if (deviceProp.computeMode == cudaComputeModeProhibited) {*/\r\n  /*\r\n  DPCT1035:33: All SYCL devices can be used by the host to submit tasks. You may need to adjust this code.\r\n  */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          19431
+    Length:          51
+    ReplacementText: 'false'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          19657
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   if (deviceProp.major < 1) {*/\r\n  /*\r\n  DPCT1005:34: The SYCL device version is different from CUDA Compute Compatibility. You may need to rewrite this code.\r\n  */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          19674
+    Length:          5
+    ReplacementText: 'get_major_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          19798
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   checkCudaErrors(cudaSetDevice(devID));*/\r\n  /*\r\n  DPCT1093:35: The \"devID\" device may be not the one intended for use. Adjust the selected device if needed.\r\n  */\r\n  /*\r\n  DPCT1003:36: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\r\n  */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          19816
+    Length:          13
+    ReplacementText: '(dpct::select_device'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          19836
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          19840
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   printf(\"gpuDeviceInit() CUDA Device [%d]: \\\"%s\\n\", devID, deviceProp.name);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          19911
+    Length:          4
+    ReplacementText: 'get_name()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          20213
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   cudaDeviceProp deviceProp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          20215
+    Length:          14
+    ReplacementText: 'dpct::device_info'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          20243
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   checkCudaErrors(cudaGetDeviceCount(&device_count));*/\r\n  /*\r\n  DPCT1003:37: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\r\n  */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          20261
+    Length:          33
+    ReplacementText: '(device_count = dpct::dev_mgr::instance().device_count(), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          20594
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     cudaGetDeviceProperties(&deviceProp, current_device);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          20598
+    Length:          23
+    ReplacementText: 'dpct::dev_mgr::instance().get_device'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          20622
+    Length:          13
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          20650
+    Length:          0
+    ReplacementText: '.get_device_info(deviceProp)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          20757
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     if (deviceProp.computeMode != cudaComputeModeProhibited) {*/\r\n    /*\r\n    DPCT1035:38: All SYCL devices can be used by the host to submit tasks. You may need to adjust this code.\r\n    */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          20765
+    Length:          51
+    ReplacementText: 'true'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          20821
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG       if (deviceProp.major == 9999 && deviceProp.minor == 9999) {*/\r\n      /*\r\n      DPCT1005:39: The SYCL device version is different from CUDA Compute Compatibility. You may need to rewrite this code.\r\n      */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          20842
+    Length:          5
+    ReplacementText: 'get_major_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          20870
+    Length:          5
+    ReplacementText: 'get_minor_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          20963
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             _ConvertSMVer2Cores(deviceProp.major, deviceProp.minor);*/\r\n            /*\r\n            DPCT1005:40: The SYCL device version is different from CUDA Compute Compatibility. You may need to rewrite this code.\r\n            */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          21006
+    Length:          5
+    ReplacementText: 'get_major_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          21024
+    Length:          5
+    ReplacementText: 'get_minor_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          21044
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG       uint64_t compute_perf = (uint64_t)deviceProp.multiProcessorCount **/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          21095
+    Length:          19
+    ReplacementText: 'get_max_compute_units()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          21118
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                               sm_per_multiproc * deviceProp.clockRate;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          21178
+    Length:          9
+    ReplacementText: 'get_max_clock_frequency()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          21770
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   cudaDeviceProp deviceProp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          21772
+    Length:          14
+    ReplacementText: 'dpct::device_info'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          22358
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     checkCudaErrors(cudaSetDevice(devID));*/\r\n    /*\r\n    DPCT1093:41: The \"devID\" device may be not the one intended for use. Adjust the selected device if needed.\r\n    */\r\n    /*\r\n    DPCT1003:42: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\r\n    */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          22378
+    Length:          13
+    ReplacementText: '(dpct::select_device'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          22398
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          22402
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     checkCudaErrors(cudaGetDeviceProperties(&deviceProp, devID));*/\r\n    /*\r\n    DPCT1003:43: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\r\n    */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          22422
+    Length:          23
+    ReplacementText: '(dpct::dev_mgr::instance().get_device'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          22446
+    Length:          13
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          22465
+    Length:          0
+    ReplacementText: '.get_device_info(deviceProp), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          22547
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG            deviceProp.name, deviceProp.major, deviceProp.minor);*/\r\n           /*\r\n           DPCT1005:44: The SYCL device version is different from CUDA Compute Compatibility. You may need to rewrite this code.\r\n           */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          22569
+    Length:          4
+    ReplacementText: 'get_name()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          22586
+    Length:          5
+    ReplacementText: 'get_major_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          22604
+    Length:          5
+    ReplacementText: 'get_minor_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          22761
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   cudaDeviceProp deviceProp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          22763
+    Length:          14
+    ReplacementText: 'dpct::device_info'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          22791
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   checkCudaErrors(cudaGetDeviceCount(&device_count));*/\r\n  /*\r\n  DPCT1003:45: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\r\n  */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          22809
+    Length:          33
+    ReplacementText: '(device_count = dpct::dev_mgr::instance().device_count(), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23073
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     cudaGetDeviceProperties(&deviceProp, current_device);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23077
+    Length:          23
+    ReplacementText: 'dpct::dev_mgr::instance().get_device'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23101
+    Length:          13
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23129
+    Length:          0
+    ReplacementText: '.get_device_info(deviceProp)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23253
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     if (deviceProp.integrated &&*/\r\n    /*\r\n    DPCT1006:46: SYCL does not provide a standard API to differentiate between integrated and discrete GPU devices.\r\n    */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23272
+    Length:          10
+    ReplacementText: 'get_integrated()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23287
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         (deviceProp.computeMode != cudaComputeModeProhibited)) {*/\r\n        /*\r\n        DPCT1035:47: All SYCL devices can be used by the host to submit tasks. You may need to adjust this code.\r\n        */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23296
+    Length:          51
+    ReplacementText: 'true'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23353
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG       checkCudaErrors(cudaSetDevice(current_device));*/\r\n      /*\r\n      DPCT1093:48: The \"current_device\" device may be not the one intended for use. Adjust the selected device if needed.\r\n      */\r\n      /*\r\n      DPCT1003:49: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\r\n      */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23375
+    Length:          13
+    ReplacementText: '(dpct::select_device'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23404
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23408
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG       checkCudaErrors(cudaGetDeviceProperties(&deviceProp, current_device));*/\r\n      /*\r\n      DPCT1003:50: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\r\n      */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23430
+    Length:          23
+    ReplacementText: '(dpct::dev_mgr::instance().get_device'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23454
+    Length:          13
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23482
+    Length:          0
+    ReplacementText: '.get_device_info(deviceProp), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23559
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG              current_device, deviceProp.name, deviceProp.major,*/\r\n             /*\r\n             DPCT1005:51: The SYCL device version is different from CUDA Compute Compatibility. You may need to rewrite this code.\r\n             */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23599
+    Length:          4
+    ReplacementText: 'get_name()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23616
+    Length:          5
+    ReplacementText: 'get_major_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23624
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG              deviceProp.minor);*/\r\n             /*\r\n             DPCT1005:52: The SYCL device version is different from CUDA Compute Compatibility. You may need to rewrite this code.\r\n             */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          23648
+    Length:          5
+    ReplacementText: 'get_minor_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24097
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   cudaDeviceProp deviceProp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24099
+    Length:          14
+    ReplacementText: 'dpct::device_info'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24127
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   deviceProp.major = 0;*/\r\n  /*\r\n  DPCT1005:53: The SYCL device version is different from CUDA Compute Compatibility. You may need to rewrite this code.\r\n  */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24140
+    Length:          5
+    ReplacementText: set_major_version
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24146
+    Length:          1
+    ReplacementText: '('
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24149
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24152
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   deviceProp.minor = 0;*/\r\n  /*\r\n  DPCT1005:54: The SYCL device version is different from CUDA Compute Compatibility. You may need to rewrite this code.\r\n  */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24165
+    Length:          5
+    ReplacementText: set_minor_version
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24171
+    Length:          1
+    ReplacementText: '('
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24174
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24191
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   checkCudaErrors(cudaGetDevice(&dev));*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24209
+    Length:          19
+    ReplacementText: 'dev = dpct::dev_mgr::instance().current_device_id()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24232
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   checkCudaErrors(cudaGetDeviceProperties(&deviceProp, dev));*/\r\n  /*\r\n  DPCT1003:55: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\r\n  */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24250
+    Length:          23
+    ReplacementText: '(dpct::dev_mgr::instance().get_device'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24274
+    Length:          13
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24291
+    Length:          0
+    ReplacementText: '.get_device_info(deviceProp), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24297
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG   if ((deviceProp.major > major_version) ||*/\r\n  /*\r\n  DPCT1005:56: The SYCL device version is different from CUDA Compute Compatibility. You may need to rewrite this code.\r\n  */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24315
+    Length:          5
+    ReplacementText: 'get_major_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24342
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG       (deviceProp.major == major_version &&*/\r\n      /*\r\n      DPCT1005:57: The SYCL device version is different from CUDA Compute Compatibility. You may need to rewrite this code.\r\n      */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24360
+    Length:          5
+    ReplacementText: 'get_major_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24387
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG        deviceProp.minor >= minor_version)) {*/\r\n       /*\r\n       DPCT1005:58: The SYCL device version is different from CUDA Compute Compatibility. You may need to rewrite this code.\r\n       */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24405
+    Length:          5
+    ReplacementText: 'get_minor_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24503
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG            deviceProp.name, deviceProp.major, deviceProp.minor);*/\r\n           /*\r\n           DPCT1005:59: The SYCL device version is different from CUDA Compute Compatibility. You may need to rewrite this code.\r\n           */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24525
+    Length:          4
+    ReplacementText: 'get_name()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24542
+    Length:          5
+    ReplacementText: 'get_major_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Offset:          24560
+    Length:          5
+    ReplacementText: 'get_minor_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+    Digest:          01c89e82697191f726790b3b404c7137
+DpctVersion:     2023.1.0
+MainHelperFileName: dpct
+USMLevel:        ''
+FeatureMap:
+  atomic.hpp:
+    atomic_fetch_add:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+        - 'D:\GitHub\Blaze\src\Grid.h'
+      FeatureName:     atomic_fetch_add
+      SubFeatureMap:   {}
+  device.hpp:
+    dev_mgr:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        dev_mgr_current_device_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'dev_mgr::current_device_id'
+          SubFeatureMap:   {}
+        dev_mgr_device_count:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'dev_mgr::device_count'
+          SubFeatureMap:   {}
+        dev_mgr_get_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'dev_mgr::get_device'
+          SubFeatureMap:   {}
+    device_ext:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        device_ext_default_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_ext::default_queue'
+          SubFeatureMap:   {}
+        device_ext_get_device_info_return_info:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_ext::get_device_info'
+          SubFeatureMap:   {}
+        device_ext_queues_wait_and_throw:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_ext::queues_wait_and_throw'
+          SubFeatureMap:   {}
+        device_ext_reset:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\main.cu'
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_ext::reset'
+          SubFeatureMap:   {}
+    device_info:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     device_info
+      SubFeatureMap:
+        device_info_get_integrated:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_integrated'
+          SubFeatureMap:   {}
+        device_info_get_major_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_major_version'
+          SubFeatureMap:   {}
+        device_info_get_max_clock_frequency:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_max_clock_frequency'
+          SubFeatureMap:   {}
+        device_info_get_max_compute_units:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_max_compute_units'
+          SubFeatureMap:   {}
+        device_info_get_minor_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_minor_version'
+          SubFeatureMap:   {}
+        device_info_get_name:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_name'
+          SubFeatureMap:   {}
+        device_info_set_major_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::set_major_version'
+          SubFeatureMap:   {}
+        device_info_set_minor_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::set_minor_version'
+          SubFeatureMap:   {}
+    get_current_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+        - 'D:\GitHub\Blaze\src\main.cu'
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     get_current_device
+      SubFeatureMap:   {}
+    get_default_queue:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+      FeatureName:     get_default_queue
+      SubFeatureMap:   {}
+    select_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     select_device
+      SubFeatureMap:   {}
+  image.hpp:
+    create_image_wrapper:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     create_image_wrapper
+      SubFeatureMap:   {}
+    image_accessor_ext:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+      FeatureName:     image_accessor_ext
+      SubFeatureMap:   {}
+    image_channel:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_channel
+      SubFeatureMap:
+        image_channel_create:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_channel::create'
+          SubFeatureMap:   {}
+    image_data:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_data
+      SubFeatureMap:
+        image_data_set_data:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_data::set_data'
+          SubFeatureMap:   {}
+        image_data_set_data_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_data::set_data_ptr'
+          SubFeatureMap:   {}
+        image_data_set_data_type:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_data::set_data_type'
+          SubFeatureMap:   {}
+    image_data_type:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\driver_types.h'
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_data_type
+      SubFeatureMap:   {}
+    image_matrix:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_matrix
+      SubFeatureMap:   {}
+    image_wrapper_base:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        image_wrapper_base_set_addressing_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_coordinate_normalization_mode_enum:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_filtering_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+    image_wrapper_base_p_alias:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_wrapper_base_p
+      SubFeatureMap:   {}
+    sampling_info:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     sampling_info
+      SubFeatureMap:
+        sampling_info_set_addressing_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+        sampling_info_set_coordinate_normalization_mode_enum:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+        sampling_info_set_filtering_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+  memory.hpp:
+    constant_memory_alias:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+        - 'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+      FeatureName:     constant_memory
+      SubFeatureMap:   {}
+    device_memory:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        device_memory_get_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_memory::get_ptr'
+          SubFeatureMap:   {}
+        device_memory_init:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_memory::init'
+          SubFeatureMap:   {}
+    dpct_accessor:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+      FeatureName:     accessor
+      SubFeatureMap:   {}
+    dpct_memcpy:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memset:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    dpct_memset_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    dpct_memset_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    memcpy_direction:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     memcpy_direction
+      SubFeatureMap:   {}
+    memory_region:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+      FeatureName:     memory_region
+      SubFeatureMap:   {}
+  util.hpp:
+    err_types:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     err_types
+      SubFeatureMap:   {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           'D:\GitHub\Blaze'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           'D:\GitHub\Blaze'
+    Specified:       false
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  CustomHelperFileName:
+    Value:           dpct
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitClNamespace:
+    Value:           'false'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+  VcxprojFile:
+    Value:           'D:\GitHub\Blaze\Blaze.vcxproj'
+    Specified:       true
+...

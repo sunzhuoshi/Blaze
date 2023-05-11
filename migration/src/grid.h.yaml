@@ -1,0 +1,1625 @@
+---
+MainSourceFile:  'd:\github\blaze\migration\src\grid.h'
+Replacements:
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          943
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\r\n#include <dpct/dpct.hpp>\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          966
+    Length:          27
+    ReplacementText: "/* DPCT_ORIG #include \"cuda_runtime.h\"*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          993
+    Length:          39
+    ReplacementText: "/* DPCT_ORIG #include \"device_launch_parameters.h\"*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1345
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline float xObjToGrid(float x) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1349
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1434
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline float yObjToGrid(float y) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1438
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1523
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline float zObjToGrid(float z) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1527
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1612
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline float xWorldToObj(float x) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1616
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1664
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         return x-mDomMin.x;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1689
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1702
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline float yWorldToObj(float y) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1706
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1754
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         return mDomSize.y - (y-mDomMin.y);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1778
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1793
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1807
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline float zWorldToObj(float z) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1811
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1859
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         return z-mDomMin.z;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1884
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1897
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline float3 worldToObj(float wPosx,float wPosy,float wPosz) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1901
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1919
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1977
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         return make_float3(wPosx-mDomMin.x,\r\n                           mDomSize.y - (wPosy-mDomMin.y),\r\n                           wPosz-mDomMin.z);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          1992
+    Length:          133
+    ReplacementText: 'sycl::float3(wPosx-mDomMin.x(), mDomSize.y() - (wPosy-mDomMin.y()), wPosz-mDomMin.z())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          2137
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline float3 worldToObj(float3 wPos) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          2141
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          2159
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          2177
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          2193
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         return make_float3(wPos.x-mDomMin.x,\r\n                           mDomSize.y - (wPos.y-mDomMin.y),\r\n                           wPos.z-mDomMin.z);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          2208
+    Length:          136
+    ReplacementText: 'sycl::float3(wPos.x()-mDomMin.x(), mDomSize.y() - (wPos.y()-mDomMin.y()), wPos.z()-mDomMin.z())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          2475
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float trilinear_interpolate(float3 oPos){*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          2479
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          2518
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          2535
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         const float gX = fmaxf( fminf(xObjToGrid(oPos.x), mWidth-1.001f), 0.0f);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          2560
+    Length:          54
+    ReplacementText: 'sycl::fmax(sycl::fmin(xObjToGrid(oPos.x()), mWidth-1.001f), 0.0f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          2617
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         const float gY = fmaxf( fminf(yObjToGrid(oPos.y), mHeight-1.001f), 0.0f);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          2642
+    Length:          55
+    ReplacementText: 'sycl::fmax(sycl::fmin(yObjToGrid(oPos.y()), mHeight-1.001f), 0.0f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          2700
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         const float gZ = fmaxf( fminf(zObjToGrid(oPos.z), mDepth-1.001f), 0.0f);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          2725
+    Length:          54
+    ReplacementText: 'sycl::fmax(sycl::fmin(zObjToGrid(oPos.z()), mDepth-1.001f), 0.0f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          5105
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     inline __device__ float cerp(float q0, float q1, float q2, float q3, float s) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          5116
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          5497
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     inline __device__ float cerpc(float q0, float q1, float q2, float q3, float s) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          5508
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          5585
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             return fmaxf((-1.0f/3.0f*s + 0.5f*s*s - 1.0f/6.0f*s*s*s) * q0\r\n                       + (1.0f - s*s + 0.5f*(s*s*s - s)) * q1\r\n                       + (s + 0.5f*(s*s - s*s*s)) * q2\r\n                       + (1.0f/6.0f*(s*s*s - s)) * q3, 0.0f);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          5604
+    Length:          235
+    ReplacementText: "sycl::fmax((-1.0f/3.0f*s + 0.5f*s*s - 1.0f/6.0f*s*s*s) * q0\r\n                       + (1.0f - s*s + 0.5f*(s*s*s - s)) * q1\r\n                       + (s + 0.5f*(s*s - s*s*s)) * q2\r\n                       + (1.0f/6.0f*(s*s*s - s)) * q3, 0.0f)"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          5851
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float tricubic_interpolate (float3 oPos, bool clamp) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          5855
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          5894
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          5924
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         const float gX = fmaxf( fminf(xObjToGrid(oPos.x), mWidth-1.001f), 0.0f);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          5949
+    Length:          54
+    ReplacementText: 'sycl::fmax(sycl::fmin(xObjToGrid(oPos.x()), mWidth-1.001f), 0.0f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          6006
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         const float gY = fmaxf( fminf(yObjToGrid(oPos.y), mHeight-1.001f), 0.0f);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          6031
+    Length:          55
+    ReplacementText: 'sycl::fmax(sycl::fmin(yObjToGrid(oPos.y()), mHeight-1.001f), 0.0f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          6089
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         const float gZ = fmaxf( fminf(zObjToGrid(oPos.z), mDepth-1.001f), 0.0f);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          6114
+    Length:          54
+    ReplacementText: 'sycl::fmax(sycl::fmin(zObjToGrid(oPos.z()), mDepth-1.001f), 0.0f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          6207
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         const int i0 = max(i1 - 1, 0);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          6230
+    Length:          14
+    ReplacementText: 'sycl::max((int)(i1 - 1), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          6279
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         const int i3 = min(i1 + 2, mWidth-1);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          6302
+    Length:          21
+    ReplacementText: 'sycl::min((int)(i1 + 2), (int)(mWidth-1))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          6360
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         const int j0 = max(j1 - 1, 0);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          6383
+    Length:          14
+    ReplacementText: 'sycl::max((int)(j1 - 1), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          6432
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         const int j3 = min(j1 + 2, mHeight-1);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          6455
+    Length:          22
+    ReplacementText: 'sycl::min((int)(j1 + 2), (int)(mHeight-1))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          6514
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         const int k0 = max(k1 - 1, 0);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          6537
+    Length:          14
+    ReplacementText: 'sycl::max((int)(k1 - 1), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          6586
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         const int k3 = min(k1 + 2, mDepth-1);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          6609
+    Length:          21
+    ReplacementText: 'sycl::min((int)(k1 + 2), (int)(mDepth-1))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          10318
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float3 mDomMin;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          10322
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          10339
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float3 mDomMax;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          10343
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          10360
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float3 mDomSize;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          10364
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          10414
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ Grid(float *frontBuffer, float *backBuffer, int width, int heigth, int depth,\r\n                    float ox, float oy, float oz, float dx, float3 domainMin, float3 domainMax,\r\n                    bool flipValue, SceneSettings scn)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          10418
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          10568
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          10586
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          10851
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG           mDomSize(domainMax-domainMin), mFlipValue(flipValue)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          10870
+    Length:          0
+    ReplacementText: 'dpct_operator_overloading::operator-('
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          10879
+    Length:          1
+    ReplacementText: ','
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          10889
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          11078
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ ~Grid() {}*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          11082
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          11107
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline void swap() {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          11111
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          11254
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline float &atBack(int i, int j, int k) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          11258
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          11479
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline float &at(int i, int j, int k) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          11483
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          11701
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline float iGridToObj(int i) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          11705
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          11819
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline float jGridToObj(int j) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          11823
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          11938
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline float kGridToObj(int k) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          11942
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12056
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline float3 gridToObj(int i, int j, int k) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12060
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12078
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12213
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         return make_float3(i+mOx, j+mOy, k+mOz)*mDx;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12228
+    Length:          32
+    ReplacementText: 'dpct_operator_overloading::operator*(sycl::float3(i+mOx, j+mOy, k+mOz)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12260
+    Length:          1
+    ReplacementText: ','
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12264
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12276
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline float3 worldToGridNoOffset(float3 wPos) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12280
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12298
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12325
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12341
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         return make_float3((wPos.x-mDomMin.x)/mDx,\r\n                           (mDomSize.y - (wPos.y-mDomMin.y))/mDx,\r\n                           (wPos.z-mDomMin.z)/mDx);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12356
+    Length:          154
+    ReplacementText: 'sycl::float3((wPos.x()-mDomMin.x())/mDx, (mDomSize.y() - (wPos.y()-mDomMin.y()))/mDx, (wPos.z()-mDomMin.z())/mDx)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12522
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline float sampleO(float3 pos, InterpolationType mode, bool clamp = false) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12526
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12558
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12923
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ inline float cubicPulse(float x, float w) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          12927
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13087
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ void sphereToGrid(float posx, float posy, float posz, float pscale, float value) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13091
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13227
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int imin = max( (int)xObjToGrid( xWorldToObj(posx - radius) ), 0 );*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13246
+    Length:          55
+    ReplacementText: 'sycl::max((int)xObjToGrid( xWorldToObj(posx - radius) ), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13304
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int imax = min( (int)xObjToGrid( xWorldToObj(posx + radius) ) + 1, mWidth);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13323
+    Length:          63
+    ReplacementText: 'sycl::min((int)((int)xObjToGrid( xWorldToObj(posx + radius) ) + 1), mWidth)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13389
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int jmin = max( (int)yObjToGrid( yWorldToObj(posy + radius) ), 0 );*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13408
+    Length:          55
+    ReplacementText: 'sycl::max((int)yObjToGrid( yWorldToObj(posy + radius) ), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13466
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int jmax = min( (int)yObjToGrid( yWorldToObj(posy - radius) ) + 1, mHeight);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13485
+    Length:          64
+    ReplacementText: 'sycl::min((int)((int)yObjToGrid( yWorldToObj(posy - radius) ) + 1), mHeight)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13552
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int kmin = max( (int)zObjToGrid( zWorldToObj(posz - radius) ), 0 );*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13571
+    Length:          55
+    ReplacementText: 'sycl::max((int)zObjToGrid( zWorldToObj(posz - radius) ), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13629
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int kmax = min( (int)zObjToGrid( zWorldToObj(posz + radius) ) + 1, mDepth);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13648
+    Length:          63
+    ReplacementText: 'sycl::min((int)((int)zObjToGrid( zWorldToObj(posz + radius) ) + 1), mDepth)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13851
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                     float mask = cubicPulse(length(worldToObj(posx,posy,posz) - gridToObj(i,j,k)), radius);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13902
+    Length:          0
+    ReplacementText: 'dpct_operator_overloading::operator-('
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13929
+    Length:          1
+    ReplacementText: ','
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13947
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13962
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                     if (mask > 0.0f) atomicAdd(&(atBack(i, j, k)), mFlipValue ? -value*mask : value*mask);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Grid.h'
+    Offset:          13999
+    Length:          68
+    ReplacementText: 'dpct::atomic_fetch_add<sycl::access::address_space::generic_space>(&(atBack(i, j, k)), mFlipValue ? -value*mask : value*mask)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  'D:\GitHub\Blaze\src\Grid.h'
+    Digest:          096996eab2ca568d6e03f07f97f38a5b
+DpctVersion:     2023.1.0
+MainHelperFileName: dpct
+USMLevel:        ''
+FeatureMap:
+  atomic.hpp:
+    atomic_fetch_add:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+        - 'D:\GitHub\Blaze\src\Grid.h'
+      FeatureName:     atomic_fetch_add
+      SubFeatureMap:   {}
+  device.hpp:
+    dev_mgr:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        dev_mgr_current_device_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'dev_mgr::current_device_id'
+          SubFeatureMap:   {}
+        dev_mgr_device_count:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'dev_mgr::device_count'
+          SubFeatureMap:   {}
+        dev_mgr_get_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'dev_mgr::get_device'
+          SubFeatureMap:   {}
+    device_ext:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        device_ext_default_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_ext::default_queue'
+          SubFeatureMap:   {}
+        device_ext_get_device_info_return_info:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_ext::get_device_info'
+          SubFeatureMap:   {}
+        device_ext_queues_wait_and_throw:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_ext::queues_wait_and_throw'
+          SubFeatureMap:   {}
+        device_ext_reset:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\main.cu'
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_ext::reset'
+          SubFeatureMap:   {}
+    device_info:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     device_info
+      SubFeatureMap:
+        device_info_get_integrated:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_integrated'
+          SubFeatureMap:   {}
+        device_info_get_major_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_major_version'
+          SubFeatureMap:   {}
+        device_info_get_max_clock_frequency:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_max_clock_frequency'
+          SubFeatureMap:   {}
+        device_info_get_max_compute_units:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_max_compute_units'
+          SubFeatureMap:   {}
+        device_info_get_minor_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_minor_version'
+          SubFeatureMap:   {}
+        device_info_get_name:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_name'
+          SubFeatureMap:   {}
+        device_info_set_major_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::set_major_version'
+          SubFeatureMap:   {}
+        device_info_set_minor_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::set_minor_version'
+          SubFeatureMap:   {}
+    get_current_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+        - 'D:\GitHub\Blaze\src\main.cu'
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     get_current_device
+      SubFeatureMap:   {}
+    get_default_queue:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+      FeatureName:     get_default_queue
+      SubFeatureMap:   {}
+    select_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     select_device
+      SubFeatureMap:   {}
+  image.hpp:
+    create_image_wrapper:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     create_image_wrapper
+      SubFeatureMap:   {}
+    image_accessor_ext:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+      FeatureName:     image_accessor_ext
+      SubFeatureMap:   {}
+    image_channel:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_channel
+      SubFeatureMap:
+        image_channel_create:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_channel::create'
+          SubFeatureMap:   {}
+    image_data:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_data
+      SubFeatureMap:
+        image_data_set_data:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_data::set_data'
+          SubFeatureMap:   {}
+        image_data_set_data_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_data::set_data_ptr'
+          SubFeatureMap:   {}
+        image_data_set_data_type:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_data::set_data_type'
+          SubFeatureMap:   {}
+    image_data_type:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\driver_types.h'
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_data_type
+      SubFeatureMap:   {}
+    image_matrix:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_matrix
+      SubFeatureMap:   {}
+    image_wrapper_base:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        image_wrapper_base_set_addressing_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_coordinate_normalization_mode_enum:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_filtering_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+    image_wrapper_base_p_alias:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_wrapper_base_p
+      SubFeatureMap:   {}
+    sampling_info:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     sampling_info
+      SubFeatureMap:
+        sampling_info_set_addressing_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+        sampling_info_set_coordinate_normalization_mode_enum:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+        sampling_info_set_filtering_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+  memory.hpp:
+    constant_memory_alias:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+        - 'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+      FeatureName:     constant_memory
+      SubFeatureMap:   {}
+    device_memory:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        device_memory_get_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_memory::get_ptr'
+          SubFeatureMap:   {}
+        device_memory_init:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_memory::init'
+          SubFeatureMap:   {}
+    dpct_accessor:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+      FeatureName:     accessor
+      SubFeatureMap:   {}
+    dpct_memcpy:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memset:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    dpct_memset_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    dpct_memset_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    memcpy_direction:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     memcpy_direction
+      SubFeatureMap:   {}
+    memory_region:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+      FeatureName:     memory_region
+      SubFeatureMap:   {}
+  util.hpp:
+    err_types:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     err_types
+      SubFeatureMap:   {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           'D:\GitHub\Blaze'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           'D:\GitHub\Blaze'
+    Specified:       false
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  CustomHelperFileName:
+    Value:           dpct
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitClNamespace:
+    Value:           'false'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+  VcxprojFile:
+    Value:           'D:\GitHub\Blaze\Blaze.vcxproj'
+    Specified:       true
+...

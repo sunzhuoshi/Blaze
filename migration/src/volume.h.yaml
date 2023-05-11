@@ -1,0 +1,959 @@
+---
+MainSourceFile:  'd:\github\blaze\migration\src\volume.h'
+Replacements:
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          947
+    Length:          27
+    ReplacementText: "/* DPCT_ORIG #include \"cuda_runtime.h\"*/\r\n#include <sycl/sycl.hpp>\r\n#include <dpct/dpct.hpp>\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1069
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     cudaArray             *content;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1073
+    Length:          9
+    ReplacementText: 'dpct::image_matrix'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1106
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     cudaExtent            size;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1110
+    Length:          10
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1136
+    Length:          0
+    ReplacementText: '{0, 0, 0}'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1139
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     cudaChannelFormatDesc channelDesc;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1143
+    Length:          21
+    ReplacementText: 'dpct::image_channel'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1179
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     cudaTextureObject_t   volumeTex;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1183
+    Length:          19
+    ReplacementText: 'dpct::image_wrapper_base_p'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1320
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         cudaExtent dataSize = {(size_t)w, (size_t)h, (size_t)d};*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1328
+    Length:          10
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1386
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         channelDesc = cudaCreateChannelDesc<float>();*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1394
+    Length:          0
+    ReplacementText: "/*\r\n        DPCT1059:0: SYCL only supports 4-channel image format. Adjust the code.\r\n        */\r\n        "
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1408
+    Length:          30
+    ReplacementText: 'dpct::image_channel::create<float>()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1441
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         checkCudaErrors(cudaMalloc3DArray(&content, &channelDesc, dataSize, cudaArraySurfaceLoadStore));*/\r\n        /*\r\n        DPCT1003:217: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\r\n        */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1465
+    Length:          17
+    ReplacementText: '(content = new dpct::image_matrix'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1483
+    Length:          10
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1493
+    Length:          12
+    ReplacementText: channelDesc
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1515
+    Length:          27
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1543
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1575
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         cudaResourceDesc surfRes;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1583
+    Length:          16
+    ReplacementText: 'dpct::image_data'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1610
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         memset(&surfRes, 0, sizeof(cudaResourceDesc));*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1645
+    Length:          16
+    ReplacementText: 'dpct::image_data'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1666
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         surfRes.resType = cudaResourceTypeArray;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1674
+    Length:          40
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1716
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         surfRes.res.array.array = content;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1724
+    Length:          34
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1758
+    Length:          0
+    ReplacementText: "\r\n        surfRes.set_data(content);"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1762
+    Length:          0
+    ReplacementText: "        /*\r\n        DPCT1007:218: Migration of cudaCreateSurfaceObject is not supported.\r\n        */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1838
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         cudaResourceDesc texRes;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1846
+    Length:          16
+    ReplacementText: 'dpct::image_data'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1872
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         memset(&texRes, 0, sizeof(cudaResourceDesc));*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1906
+    Length:          16
+    ReplacementText: 'dpct::image_data'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1929
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         texRes.resType = cudaResourceTypeArray;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1944
+    Length:          31
+    ReplacementText: 'set_data_type(dpct::image_data_type::matrix)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1978
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         texRes.res.array.array = content;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1993
+    Length:          3
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1996
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          1997
+    Length:          5
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2002
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2003
+    Length:          15
+    ReplacementText: 'set_data_ptr(content)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2023
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         cudaTextureDesc texDescr;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2031
+    Length:          15
+    ReplacementText: 'dpct::sampling_info'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2058
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         memset(&texDescr, 0, sizeof(cudaTextureDesc));*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2094
+    Length:          15
+    ReplacementText: 'dpct::sampling_info'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2116
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         texDescr.filterMode     = cudaFilterModeLinear;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2133
+    Length:          37
+    ReplacementText: 'set(sycl::filtering_mode::linear)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2173
+    Length:          57
+    ReplacementText: "/* DPCT_ORIG         texDescr.addressMode[0] = cudaAddressModeClamp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2230
+    Length:          57
+    ReplacementText: "/* DPCT_ORIG         texDescr.addressMode[1] = cudaAddressModeClamp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2287
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         texDescr.addressMode[2] = cudaAddressModeClamp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2304
+    Length:          37
+    ReplacementText: 'set(sycl::addressing_mode::clamp_to_edge)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2346
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         checkCudaErrors(cudaCreateTextureObject(&volumeTex, &texRes, &texDescr, NULL));*/\r\n        /*\r\n        DPCT1003:1: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\r\n        */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2370
+    Length:          61
+    ReplacementText: '(volumeTex = dpct::create_image_wrapper(texRes, texDescr), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2461
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         checkCudaErrors(cudaDestroyTextureObject(volumeTex));*/\r\n        /*\r\n        DPCT1003:2: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\r\n        */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2485
+    Length:          35
+    ReplacementText: '(delete volumeTex, 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2524
+    Length:          0
+    ReplacementText: "        /*\r\n        DPCT1007:219: Migration of cudaDestroySurfaceObject is not supported.\r\n        */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2588
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         checkCudaErrors(cudaFreeArray(content));*/\r\n        /*\r\n        DPCT1003:220: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\r\n        */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2612
+    Length:          22
+    ReplacementText: '(delete content'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\Volume.h'
+    Offset:          2634
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  'D:\GitHub\Blaze\src\Volume.h'
+    Digest:          77b9895eb8862004daabb9f143d50733
+DpctVersion:     2023.1.0
+MainHelperFileName: dpct
+USMLevel:        ''
+FeatureMap:
+  atomic.hpp:
+    atomic_fetch_add:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+        - 'D:\GitHub\Blaze\src\Grid.h'
+      FeatureName:     atomic_fetch_add
+      SubFeatureMap:   {}
+  device.hpp:
+    dev_mgr:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        dev_mgr_current_device_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'dev_mgr::current_device_id'
+          SubFeatureMap:   {}
+        dev_mgr_device_count:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'dev_mgr::device_count'
+          SubFeatureMap:   {}
+        dev_mgr_get_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'dev_mgr::get_device'
+          SubFeatureMap:   {}
+    device_ext:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        device_ext_default_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_ext::default_queue'
+          SubFeatureMap:   {}
+        device_ext_get_device_info_return_info:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_ext::get_device_info'
+          SubFeatureMap:   {}
+        device_ext_queues_wait_and_throw:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_ext::queues_wait_and_throw'
+          SubFeatureMap:   {}
+        device_ext_reset:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\main.cu'
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_ext::reset'
+          SubFeatureMap:   {}
+    device_info:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     device_info
+      SubFeatureMap:
+        device_info_get_integrated:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_integrated'
+          SubFeatureMap:   {}
+        device_info_get_major_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_major_version'
+          SubFeatureMap:   {}
+        device_info_get_max_clock_frequency:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_max_clock_frequency'
+          SubFeatureMap:   {}
+        device_info_get_max_compute_units:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_max_compute_units'
+          SubFeatureMap:   {}
+        device_info_get_minor_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_minor_version'
+          SubFeatureMap:   {}
+        device_info_get_name:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_name'
+          SubFeatureMap:   {}
+        device_info_set_major_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::set_major_version'
+          SubFeatureMap:   {}
+        device_info_set_minor_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::set_minor_version'
+          SubFeatureMap:   {}
+    get_current_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+        - 'D:\GitHub\Blaze\src\main.cu'
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     get_current_device
+      SubFeatureMap:   {}
+    get_default_queue:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+      FeatureName:     get_default_queue
+      SubFeatureMap:   {}
+    select_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     select_device
+      SubFeatureMap:   {}
+  image.hpp:
+    create_image_wrapper:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     create_image_wrapper
+      SubFeatureMap:   {}
+    image_accessor_ext:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+      FeatureName:     image_accessor_ext
+      SubFeatureMap:   {}
+    image_channel:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_channel
+      SubFeatureMap:
+        image_channel_create:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_channel::create'
+          SubFeatureMap:   {}
+    image_data:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_data
+      SubFeatureMap:
+        image_data_set_data:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_data::set_data'
+          SubFeatureMap:   {}
+        image_data_set_data_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_data::set_data_ptr'
+          SubFeatureMap:   {}
+        image_data_set_data_type:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_data::set_data_type'
+          SubFeatureMap:   {}
+    image_data_type:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\driver_types.h'
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_data_type
+      SubFeatureMap:   {}
+    image_matrix:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_matrix
+      SubFeatureMap:   {}
+    image_wrapper_base:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        image_wrapper_base_set_addressing_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_coordinate_normalization_mode_enum:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_filtering_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+    image_wrapper_base_p_alias:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_wrapper_base_p
+      SubFeatureMap:   {}
+    sampling_info:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     sampling_info
+      SubFeatureMap:
+        sampling_info_set_addressing_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+        sampling_info_set_coordinate_normalization_mode_enum:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+        sampling_info_set_filtering_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+  memory.hpp:
+    constant_memory_alias:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+        - 'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+      FeatureName:     constant_memory
+      SubFeatureMap:   {}
+    device_memory:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        device_memory_get_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_memory::get_ptr'
+          SubFeatureMap:   {}
+        device_memory_init:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_memory::init'
+          SubFeatureMap:   {}
+    dpct_accessor:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+      FeatureName:     accessor
+      SubFeatureMap:   {}
+    dpct_memcpy:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memset:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    dpct_memset_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    dpct_memset_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    memcpy_direction:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     memcpy_direction
+      SubFeatureMap:   {}
+    memory_region:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+      FeatureName:     memory_region
+      SubFeatureMap:   {}
+  util.hpp:
+    err_types:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     err_types
+      SubFeatureMap:   {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           'D:\GitHub\Blaze'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           'D:\GitHub\Blaze'
+    Specified:       false
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  CustomHelperFileName:
+    Value:           dpct
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitClNamespace:
+    Value:           'false'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+  VcxprojFile:
+    Value:           'D:\GitHub\Blaze\Blaze.vcxproj'
+    Specified:       true
+...

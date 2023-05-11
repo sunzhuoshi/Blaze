@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.33529.622
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Blaze", "Blaze.vcxproj", "{D406FC62-4E0A-40F5-8C03-BD1ABA3E8E68}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Blaze_dpcpp", "migration\Blaze_dpcpp.vcxproj", "{9506289B-C488-4C16-A803-F0E8B9B81E52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -15,6 +17,10 @@ Global
 		{D406FC62-4E0A-40F5-8C03-BD1ABA3E8E68}.Debug|x64.Build.0 = Debug|x64
 		{D406FC62-4E0A-40F5-8C03-BD1ABA3E8E68}.Release|x64.ActiveCfg = Release|x64
 		{D406FC62-4E0A-40F5-8C03-BD1ABA3E8E68}.Release|x64.Build.0 = Release|x64
+		{9506289B-C488-4C16-A803-F0E8B9B81E52}.Debug|x64.ActiveCfg = Debug|x64
+		{9506289B-C488-4C16-A803-F0E8B9B81E52}.Debug|x64.Build.0 = Debug|x64
+		{9506289B-C488-4C16-A803-F0E8B9B81E52}.Release|x64.ActiveCfg = Debug|x64
+		{9506289B-C488-4C16-A803-F0E8B9B81E52}.Release|x64.Build.0 = Debug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

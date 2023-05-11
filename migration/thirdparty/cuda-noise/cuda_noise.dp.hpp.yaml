@@ -1,0 +1,4037 @@
+---
+MainSourceFile:  'd:\github\blaze\migration\thirdparty\cuda-noise\cuda_noise.dp.hpp'
+Replacements:
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          165
+    Length:          27
+    ReplacementText: "/* DPCT_ORIG #include <cuda_runtime.h>*/\r\n#include <sycl/sycl.hpp>\r\n#include <dpct/dpct.hpp>\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          998
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ unsigned int hash(unsigned int seed)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          1002
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          1452
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ int randomIntRange(int min, int max, int seed)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          1456
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          1679
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float randomFloat(unsigned int seed)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          1683
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          1888
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float clamp(float val, float min, float max)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          1892
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          2183
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float mapToSigned(float input)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          2187
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          2371
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float mapToUnsigned(float input)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          2375
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          2549
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float clampToSigned(float input)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          2553
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          2605
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         return __saturatef(input) * 2.0f - 1.0f;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          2620
+    Length:          18
+    ReplacementText: 'sycl::clamp<float>(input, 0.0f, 1.0f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          2740
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float clampToUnsigned(float input)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          2744
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          2798
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         return __saturatef(input * 0.5f + 0.5f);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          2813
+    Length:          32
+    ReplacementText: 'sycl::clamp<float>(input * 0.5f + 0.5f, 0.0f, 1.0f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          2910
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float randomGrid(int x, int y, int z, int seed = 0)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          2914
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          3176
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ unsigned int randomIntGrid(float x, float y, float z, float seed = 0.0f)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          3180
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          3431
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float3 vectorNoise(int x, int y, int z)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          3435
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          3446
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          3494
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         return make_float3(randomFloat(x * 8231.0f + y * 34612.0f + z * 11836.0f + 19283.0f) * 2.0f - 1.0f,\r\n            randomFloat(x * 1171.0f + y * 9234.0f + z * 992903.0f + 1466.0f) * 2.0f - 1.0f,\r\n            0.0f);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          3509
+    Length:          204
+    ReplacementText: 'sycl::float3(randomFloat(x * 8231.0f + y * 34612.0f + z * 11836.0f + 19283.0f) * 2.0f - 1.0f, randomFloat(x * 1171.0f + y * 9234.0f + z * 992903.0f + 1466.0f) * 2.0f - 1.0f, 0.0f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          3765
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float3 scaleVector(float3 v, float factor)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          3769
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          3780
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          3799
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          3831
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         return make_float3(v.x * factor, v.y * factor, v.z * factor);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          3846
+    Length:          53
+    ReplacementText: 'sycl::float3(v.x() * factor, v.y() * factor, v.z() * factor)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          3960
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float3 nonuniformScaleVector(float3 v, float xf, float yf, float zf)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          3964
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          3975
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4004
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4052
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         return make_float3(v.x * xf, v.y * yf, v.z * zf);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4067
+    Length:          41
+    ReplacementText: 'sycl::float3(v.x() * xf, v.y() * yf, v.z() * zf)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4150
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float3 addVectors(float3 v, float3 w)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4154
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4165
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4183
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4193
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4211
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         return make_float3(v.x + w.x, v.y + w.y, v.z + w.z);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4226
+    Length:          44
+    ReplacementText: 'sycl::float3(v.x() + w.x(), v.y() + w.y(), v.z() + w.z())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4322
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float dotProduct(float3 u, float3 v)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4326
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4354
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4364
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4382
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         return (u.x * v.x + u.y * v.y + u.z * v.z);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4400
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4406
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4412
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4418
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4424
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4430
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4481
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ __constant__ float gradMap[16][3] = { { 1.0f, 1.0f, 0.0f },{ -1.0f, 1.0f, 0.0f },{ 1.0f, -1.0f, 0.0f },{ -1.0f, -1.0f, 0.0f },\r\n    { 1.0f, 0.0f, 1.0f },{ -1.0f, 0.0f, 1.0f },{ 1.0f, 0.0f, -1.0f },{ -1.0f, 0.0f, -1.0f },\r\n    { 0.0f, 1.0f, 1.0f },{ 0.0f, -1.0f, 1.0f },{ 0.0f, 1.0f, -1.0f },{ 0.0f, -1.0f, -1.0f }};*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4485
+    Length:          326
+    ReplacementText: "static dpct::constant_memory<float, 2> gradMap(sycl::range<2>(16, 3), { { 1.0f, 1.0f, 0.0f },{ -1.0f, 1.0f, 0.0f },{ 1.0f, -1.0f, 0.0f },{ -1.0f, -1.0f, 0.0f },\r\n    { 1.0f, 0.0f, 1.0f },{ -1.0f, 0.0f, 1.0f },{ 1.0f, 0.0f, -1.0f },{ -1.0f, 0.0f, -1.0f },\r\n    { 0.0f, 1.0f, 1.0f },{ 0.0f, -1.0f, 1.0f },{ 0.0f, 1.0f, -1.0f },{ 0.0f, -1.0f, -1.0f }});"
+    ConstantFlag:    DeviceConstant
+    ConstantOffset:  4496
+    InitStr:         "{ { 1.0f, 1.0f, 0.0f },{ -1.0f, 1.0f, 0.0f },{ 1.0f, -1.0f, 0.0f },{ -1.0f, -1.0f, 0.0f },\r\n    { 1.0f, 0.0f, 1.0f },{ -1.0f, 0.0f, 1.0f },{ 1.0f, 0.0f, -1.0f },{ -1.0f, 0.0f, -1.0f },\r\n    { 0.0f, 1.0f, 1.0f },{ 0.0f, -1.0f, 1.0f },{ 0.0f, 1.0f, -1.0f },{ 0.0f, -1.0f, -1.0f }}"
+    NewHostVarName:  gradMap_host_ct1
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4906
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__  float lerp(float a, float b, float ratio)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          4910
+    Length:          12
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          5077
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float cubic(float p0, float p1, float p2, float p3, float x)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          5081
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          5345
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float grad(int hash, float x, float y, float z)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          5349
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          6109
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float fade(float t)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          6113
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          6343
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float dot(float g[3], float x, float y, float z) {*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          6347
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          6515
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ unsigned char calcPerm(int p)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          6519
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          6666
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ unsigned char calcPerm12(int p)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          6670
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          6886
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float simplexNoise(float3 pos, float scale, int seed)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          6890
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          6920
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          6953
+    Length:          0
+    ReplacementText: ",\r\n                       dpct::accessor<float, dpct::constant, 2> gradMap"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          6963
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float xin = pos.x * scale;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          6987
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          6999
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float yin = pos.y * scale;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          7023
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          7035
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float zin = pos.z * scale;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          7059
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          7460
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int i = floorf(xin + s);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          7476
+    Length:          15
+    ReplacementText: 'sycl::floor(xin + s)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          7494
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int j = floorf(yin + s);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          7510
+    Length:          15
+    ReplacementText: 'sycl::floor(yin + s)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          7528
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int k = floorf(zin + s);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          7544
+    Length:          15
+    ReplacementText: 'sycl::floor(zin + s)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11138
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float checker(float3 pos, float scale, int seed)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11142
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11167
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11210
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int ix = (int)(pos.x * scale);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11237
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11250
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int iy = (int)(pos.y * scale);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11277
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11290
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int iz = (int)(pos.z * scale);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11317
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11451
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float spots(float3 pos, float scale, int seed, float size, int minNum, int maxNum, float jitter, profileShape shape)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11455
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11478
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11648
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int ix = (int)(pos.x * scale);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11675
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11688
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int iy = (int)(pos.y * scale);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11715
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11728
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int iz = (int)(pos.z * scale);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11755
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11770
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float u = pos.x - (float)ix;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11792
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11808
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float v = pos.y - (float)iy;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11830
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11846
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float w = pos.z - (float)iz;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          11868
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          13282
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                                 val = fmaxf(val, 1.0f);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          13320
+    Length:          16
+    ReplacementText: 'sycl::fmax(val, 1.0f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          13373
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                                 val = fmaxf(val, -1.0f);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          13411
+    Length:          17
+    ReplacementText: 'sycl::fmax(val, -1.0f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          13512
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                             distanceAbs = fabsf(distU) + fabsf(distV) + fabsf(distW);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          13554
+    Length:          12
+    ReplacementText: 'sycl::fabs(distU)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          13569
+    Length:          12
+    ReplacementText: 'sycl::fabs(distV)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          13584
+    Length:          12
+    ReplacementText: 'sycl::fabs(distW)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          13599
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                             val = fmaxf(val, 1.0f - clamp(distanceAbs, 0.0f, size) / size);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          13633
+    Length:          56
+    ReplacementText: 'sycl::fmax(val, 1.0f - clamp(distanceAbs, 0.0f, size) / size)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          13776
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                             val = fmaxf(val, 1.0f - clamp(distanceSq, 0.0f, size) / size);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          13810
+    Length:          55
+    ReplacementText: 'sycl::fmax(val, 1.0f - clamp(distanceSq, 0.0f, size) / size)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          14061
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float worleyNoise(float3 pos, float scale, int seed, float size, int minNum, int maxNum, float jitter)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          14065
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          14094
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          14244
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int ix = (int)(pos.x * scale);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          14271
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          14284
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int iy = (int)(pos.y * scale);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          14311
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          14324
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int iz = (int)(pos.z * scale);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          14351
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          14366
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float u = pos.x - (float)ix;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          14388
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          14404
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float v = pos.y - (float)iy;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          14426
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          14442
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float w = pos.z - (float)iz;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          14464
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          15794
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         return __saturatef(minDist) * 2.0f - 1.0f;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          15809
+    Length:          20
+    ReplacementText: 'sycl::clamp<float>(minDist, 0.0f, 1.0f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          15886
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float tricubic(int x, int y, int z, float u, float v, float w)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          15890
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          18793
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float discreteNoise(float3 pos, float scale, int seed)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          18797
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          18828
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          18871
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int ix = (int)(pos.x * scale);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          18898
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          18911
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int iy = (int)(pos.y * scale);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          18938
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          18951
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int iz = (int)(pos.z * scale);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          18978
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          19075
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float linearValue(float3 pos, float scale, int seed)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          19079
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          19108
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          19189
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int ix = (int)pos.x;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          19215
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          19219
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int iy = (int)pos.y;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          19245
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          19249
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int iz = (int)pos.z;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          19275
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          19281
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float u = pos.x - ix;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          19303
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          19312
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float v = pos.y - iy;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          19334
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          19343
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float w = pos.z - iz;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          19365
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          20265
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float fadedValue(float3 pos, float scale, int seed)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          20269
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          20297
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          20378
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int ix = (int)(pos.x * scale);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          20405
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          20418
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int iy = (int)(pos.y * scale);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          20445
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          20458
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int iz = (int)(pos.z * scale);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          20485
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          20500
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float u = fade(pos.x - ix);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          20527
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          20537
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float v = fade(pos.y - iy);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          20564
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          20574
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float w = fade(pos.z - iz);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          20601
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21494
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float cubicValue(float3 pos, float scale, int seed)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21498
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21526
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21569
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         pos.x = pos.x * scale;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21581
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21589
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21601
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         pos.y = pos.y * scale;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21613
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21621
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21633
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         pos.z = pos.z * scale;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21645
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21653
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21667
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int ix = (int)pos.x;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21693
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21697
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int iy = (int)pos.y;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21723
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21727
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         int iz = (int)pos.z;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21753
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21759
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float u = pos.x - ix;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21781
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21790
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float v = pos.y - iy;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21812
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21821
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float w = pos.z - iz;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21843
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21940
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float perlinNoise(float3 pos, float scale, int seed)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21944
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          21973
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22054
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         pos.x = pos.x * scale;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22066
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22074
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22086
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         pos.y = pos.y * scale;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22098
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22106
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22118
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         pos.z = pos.z * scale;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22130
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22138
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22193
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float ix = floorf(pos.x);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22212
+    Length:          13
+    ReplacementText: 'sycl::floor(pos.x())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22228
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float iy = floorf(pos.y);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22247
+    Length:          13
+    ReplacementText: 'sycl::floor(pos.y())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22263
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float iz = floorf(pos.z);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22282
+    Length:          13
+    ReplacementText: 'sycl::floor(pos.z())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22346
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         pos.x -= ix;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22358
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22368
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         pos.y -= iy;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22380
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22390
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         pos.z -= iz;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22402
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22442
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float u = fade(pos.x);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22469
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22474
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float v = fade(pos.y);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22501
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22506
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float w = fade(pos.z);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22533
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22569
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float i000 = grad(randomIntGrid(ix, iy, iz, fseed), pos.x, pos.y, pos.z);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22633
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22640
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22647
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22652
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float i100 = grad(randomIntGrid(ix + 1.0f, iy, iz, fseed), pos.x - 1.0f, pos.y, pos.z);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22723
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22737
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22744
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22749
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float i010 = grad(randomIntGrid(ix, iy + 1.0f, iz, fseed), pos.x, pos.y - 1.0f, pos.z);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22820
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22827
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22841
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22846
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float i110 = grad(randomIntGrid(ix + 1.0f, iy + 1.0f, iz, fseed), pos.x - 1.0f, pos.y - 1.0f, pos.z);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22924
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22938
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22952
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          22957
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float i001 = grad(randomIntGrid(ix, iy, iz + 1.0f, fseed), pos.x, pos.y, pos.z - 1.0f);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23028
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23035
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23042
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23054
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float i101 = grad(randomIntGrid(ix + 1.0f, iy, iz + 1.0f, fseed), pos.x - 1.0f, pos.y, pos.z - 1.0f);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23132
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23146
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23153
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23165
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float i011 = grad(randomIntGrid(ix, iy + 1.0f, iz + 1.0f, fseed), pos.x, pos.y - 1.0f, pos.z - 1.0f);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23243
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23250
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23264
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23276
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         float i111 = grad(randomIntGrid(ix + 1.0f, iy + 1.0f, iz + 1.0f, fseed), pos.x - 1.0f, pos.y - 1.0f, pos.z - 1.0f);*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23361
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23375
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23389
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23828
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float repeaterPerlin(float3 pos, float scale, int seed, int n, float lacunarity, float decay)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23832
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          23864
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          24049
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             acc += perlinNoise(make_float3(pos.x * scale, pos.y * scale, pos.z * scale), 1.0f, (i + 38) * 27389482) * amp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          24080
+    Length:          56
+    ReplacementText: 'sycl::float3(pos.x() * scale, pos.y() * scale, pos.z() * scale)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          24326
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float repeaterPerlinBounded(float3 pos, float scale, int seed, int n, float lacunarity, float decay, float threshold)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          24330
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          24369
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          24571
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             acc *= 1.0f - __saturatef(0.5f + 0.5f * perlinNoise(make_float3(pos.x * scale, pos.y * scale, pos.z * scale), 1.0f, seed ^ ((i + 38) * 27389482))) * amp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          24597
+    Length:          132
+    ReplacementText: 'sycl::clamp<float>(0.5f + 0.5f * perlinNoise(sycl::float3(pos.x() * scale, pos.y() * scale, pos.z() * scale), 1.0f, seed ^ ((i + 38) * 27389482)), 0.0f, 1.0f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          25103
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float repeaterPerlinAbs(float3 pos, float scale, int seed, int n, float lacunarity, float decay)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          25107
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          25142
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          25327
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                         acc += fabsf(perlinNoise(make_float3(pos.x * scale, pos.y * scale, pos.z * scale), 1.0f, seed)) * amp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          25358
+    Length:          88
+    ReplacementText: 'sycl::fabs(perlinNoise(sycl::float3(pos.x() * scale, pos.y() * scale, pos.z() * scale), 1.0f, seed))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          25692
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float repeaterSimplex(float3 pos, float scale, int seed, int n, float lacunarity, float decay)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          25696
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          25729
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          25800
+    Length:          0
+    ReplacementText: ",\r\n                          dpct::accessor<float, dpct::constant, 2> gradMap"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          25914
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             acc += simplexNoise(make_float3(pos.x, pos.y, pos.z), scale, seed) * amp * 0.35f;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          25946
+    Length:          32
+    ReplacementText: 'sycl::float3(pos.x(), pos.y(), pos.z())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          25991
+    Length:          0
+    ReplacementText: ', gradMap'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          26224
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float repeaterSimplexAbs(float3 pos, float scale, int seed, int n, float lacunarity, float decay)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          26228
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          26264
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          26335
+    Length:          0
+    ReplacementText: ",\r\n                             dpct::accessor<float, dpct::constant, 2> gradMap"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          26449
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             acc += fabsf(simplexNoise(make_float3(pos.x, pos.y, pos.z), scale, seed)) * amp * 0.35f;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          26468
+    Length:          66
+    ReplacementText: 'sycl::fabs(simplexNoise(sycl::float3(pos.x(), pos.y(), pos.z()), scale, seed, gradMap))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          26753
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float repeaterSimplexBounded(float3 pos, float scale, int seed, int n, float lacunarity, float decay, float threshold)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          26757
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          26797
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          26885
+    Length:          0
+    ReplacementText: ",\r\n                                 dpct::accessor<float, dpct::constant, 2> gradMap"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          26999
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             float val = __saturatef((simplexNoise(make_float3(pos.x * scale + 32240.7922f, pos.y * scale + 835622.882f, pos.z * scale + 824.371968f), 1.0f, seed) * 0.3f + 0.5f)) * amp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          27023
+    Length:          153
+    ReplacementText: 'sycl::clamp<float>((simplexNoise(sycl::float3(pos.x() * scale + 32240.7922f, pos.y() * scale + 835622.882f, pos.z() * scale + 824.371968f), 1.0f, seed, gradMap) * 0.3f + 0.5f), 0.0f, 1.0f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          27509
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float repeater(float3 pos, float scale, int seed, int n, float lacunarity, float decay, basisFunction basis)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          27513
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          27539
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          27631
+    Length:          0
+    ReplacementText: ",\r\n                   dpct::accessor<float, dpct::constant, 2> gradMap"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          27822
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                 acc += checker(make_float3(pos.x * scale + 53872.1923f, pos.y * scale + 58334.4081f, pos.z * scale + 9358.34667f), 1.0f, seed) * amp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          27853
+    Length:          98
+    ReplacementText: 'sycl::float3(pos.x() * scale + 53872.1923f, pos.y() * scale + 58334.4081f, pos.z() * scale + 9358.34667f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          28032
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                 acc += discreteNoise(make_float3(pos.x * scale + 7852.53114f, pos.y * scale + 319739.059f, pos.z * scale + 451336.504f), 1.0f, seed) * amp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          28069
+    Length:          98
+    ReplacementText: 'sycl::float3(pos.x() * scale + 7852.53114f, pos.y() * scale + 319739.059f, pos.z() * scale + 451336.504f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          28251
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                 acc += linearValue(make_float3(pos.x * scale + 940.748139f, pos.y * scale + 10196.4500f, pos.z * scale + 25650.9789f), 1.0f, seed) * amp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          28286
+    Length:          98
+    ReplacementText: 'sycl::float3(pos.x() * scale + 940.748139f, pos.y() * scale + 10196.4500f, pos.z() * scale + 25650.9789f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          28467
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                 acc += fadedValue(make_float3(pos.x * scale + 7683.26428f, pos.y * scale + 2417.78195f, pos.z * scale + 93889.4897f), 1.0f, seed) * amp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          28501
+    Length:          98
+    ReplacementText: 'sycl::float3(pos.x() * scale + 7683.26428f, pos.y() * scale + 2417.78195f, pos.z() * scale + 93889.4897f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          28682
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                 acc += cubicValue(make_float3(pos.x * scale + 6546.80178f, pos.y * scale + 14459.4682f, pos.z * scale + 11616.5811f), 1.0f, seed) * amp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          28716
+    Length:          98
+    ReplacementText: 'sycl::float3(pos.x() * scale + 6546.80178f, pos.y() * scale + 14459.4682f, pos.z() * scale + 11616.5811f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          28893
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                 acc += perlinNoise(make_float3(pos.x * scale + 1764.66931f, pos.y * scale + 2593.55017f, pos.z * scale + 4813.24412f), 1.0f, seed) * amp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          28928
+    Length:          98
+    ReplacementText: 'sycl::float3(pos.x() * scale + 1764.66931f, pos.y() * scale + 2593.55017f, pos.z() * scale + 4813.24412f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          29106
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                 acc += simplexNoise(make_float3(pos.x * scale + 7442.93020f, pos.y * scale + 8341.06698f, pos.z * scale + 66848.7870f), 1.0f, seed) * amp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          29142
+    Length:          98
+    ReplacementText: 'sycl::float3(pos.x() * scale + 7442.93020f, pos.y() * scale + 8341.06698f, pos.z() * scale + 66848.7870f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          29252
+    Length:          0
+    ReplacementText: ', gradMap'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          29319
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                 acc += worleyNoise(make_float3(pos.x * scale + 7619.01285f, pos.y * scale + 57209.0681f, pos.z * scale + 1167.91397f), 1.0f, seed, 0.1f, 4, 4, 1.0f) * amp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          29354
+    Length:          98
+    ReplacementText: 'sycl::float3(pos.x() * scale + 7619.01285f, pos.y() * scale + 57209.0681f, pos.z() * scale + 1167.91397f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          29548
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                 acc += spots(make_float3(pos.x * scale + 33836.4116f, pos.y * scale + 2242.51045f, pos.z * scale + 6720.07486f), 1.0f, seed, 0.1f, 0, 4, 1.0f, SHAPE_LINEAR) * amp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          29577
+    Length:          98
+    ReplacementText: 'sycl::float3(pos.x() * scale + 33836.4116f, pos.y() * scale + 2242.51045f, pos.z() * scale + 6720.07486f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          30080
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float fractalSimplex(float3 pos, float scale, int seed, float du, int n, float lacunarity, float decay)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          30084
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          30116
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          30197
+    Length:          0
+    ReplacementText: ",\r\n                         dpct::accessor<float, dpct::constant, 2> gradMap"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          30345
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             acc += simplexNoise(make_float3(pos.x * scale + 617.437379f, pos.y * scale + 196410.219f, pos.z * scale + 321280.627f), 1.0f, seed * (i + 1)) * amp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          30377
+    Length:          98
+    ReplacementText: 'sycl::float3(pos.x() * scale + 617.437379f, pos.y() * scale + 196410.219f, pos.z() * scale + 321280.627f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          30497
+    Length:          0
+    ReplacementText: ', gradMap'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          30786
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float turbulence(float3 pos, float scaleIn, float scaleOut, int seed, float strength, basisFunction inFunc, basisFunction outFunc)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          30790
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          30818
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          30930
+    Length:          0
+    ReplacementText: ",\r\n                     dpct::accessor<float, dpct::constant, 2> gradMap"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31006
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.x += checker(pos, scaleIn, seed ^ 0x34ff8885) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31022
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31081
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.y += checker(pos, scaleIn, seed ^ 0x2d03cba3) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31097
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31156
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.z += checker(pos, scaleIn, seed ^ 0x5a76fb1b) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31172
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31285
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.x += linearValue(pos, scaleIn, seed ^ 0x5527fdb8) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31301
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31364
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.y += linearValue(pos, scaleIn, seed ^ 0x42af1a2e) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31380
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31443
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.z += linearValue(pos, scaleIn, seed ^ 0x1482ee8c) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31459
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31575
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.x += fadedValue(pos, scaleIn, seed ^ 0x295590fc) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31591
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31653
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.y += fadedValue(pos, scaleIn, seed ^ 0x30731854) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31669
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31731
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.z += fadedValue(pos, scaleIn, seed ^ 0x73d2ca4c) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31747
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31862
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.x += cubicValue(pos, scaleIn, seed ^ 0x663a1f09) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31878
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31940
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.y += cubicValue(pos, scaleIn, seed ^ 0x429bf56b) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          31956
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32018
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.z += cubicValue(pos, scaleIn, seed ^ 0x37fa6fe9) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32034
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32145
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.x += perlinNoise(pos, scaleIn, seed ^ 0x74827384) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32161
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32224
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.y += perlinNoise(pos, scaleIn, seed ^ 0x10938478) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32240
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32303
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.z += perlinNoise(pos, scaleIn, seed ^ 0x62723883) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32319
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32432
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.x += simplexNoise(pos, scaleIn, seed ^ 0x47829472) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32448
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32497
+    Length:          0
+    ReplacementText: ', gradMap'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32512
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.y += simplexNoise(pos, scaleIn, seed ^ 0x58273829) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32528
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32577
+    Length:          0
+    ReplacementText: ', gradMap'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32592
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.z += simplexNoise(pos, scaleIn, seed ^ 0x10294647) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32608
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32657
+    Length:          0
+    ReplacementText: ', gradMap'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32721
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.x += worleyNoise(pos, scaleIn, seed ^ 0x1d96f515, 1.0f, 4, 4, 1.0f) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32737
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32818
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.y += worleyNoise(pos, scaleIn, seed ^ 0x4df308f0, 1.0f, 4, 4, 1.0f) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32834
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32915
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             pos.z += worleyNoise(pos, scaleIn, seed ^ 0x2b79442a, 1.0f, 4, 4, 1.0f) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          32931
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          33585
+    Length:          0
+    ReplacementText: ', gradMap'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          33798
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     __device__ float repeaterTurbulence(float3 pos, float scaleIn, float scaleOut, int seed, float strength, int n, basisFunction basisIn, basisFunction basisOut)*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          33802
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          33838
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          33959
+    Length:          0
+    ReplacementText: ",\r\n                             dpct::accessor<float, dpct::constant, 2> gradMap"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          33969
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         pos.x += (repeater(make_float3(pos.x, pos.y, pos.z), scaleIn, seed ^ 0x41728394, n, 2.0f, 0.5f, basisIn)) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          33981
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          33996
+    Length:          32
+    ReplacementText: 'sycl::float3(pos.x(), pos.y(), pos.z())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          34080
+    Length:          0
+    ReplacementText: ', gradMap'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          34096
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         pos.y += (repeater(make_float3(pos.x, pos.y, pos.z), scaleIn, seed ^ 0x72837263, n, 2.0f, 0.5f, basisIn)) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          34108
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          34123
+    Length:          32
+    ReplacementText: 'sycl::float3(pos.x(), pos.y(), pos.z())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          34207
+    Length:          0
+    ReplacementText: ', gradMap'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          34223
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         pos.z += (repeater(make_float3(pos.x, pos.y, pos.z), scaleIn, seed ^ 0x26837363, n, 2.0f, 0.5f, basisIn)) * strength;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          34235
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          34250
+    Length:          32
+    ReplacementText: 'sycl::float3(pos.x(), pos.y(), pos.z())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          34334
+    Length:          0
+    ReplacementText: ', gradMap'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Offset:          34433
+    Length:          0
+    ReplacementText: ', gradMap'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+    Digest:          1178eb968d8b1bb73831b5b91902463d
+DpctVersion:     2023.1.0
+MainHelperFileName: dpct
+USMLevel:        ''
+FeatureMap:
+  atomic.hpp:
+    atomic_fetch_add:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+        - 'D:\GitHub\Blaze\src\Grid.h'
+      FeatureName:     atomic_fetch_add
+      SubFeatureMap:   {}
+  device.hpp:
+    dev_mgr:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        dev_mgr_current_device_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'dev_mgr::current_device_id'
+          SubFeatureMap:   {}
+        dev_mgr_device_count:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'dev_mgr::device_count'
+          SubFeatureMap:   {}
+        dev_mgr_get_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'dev_mgr::get_device'
+          SubFeatureMap:   {}
+    device_ext:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        device_ext_default_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_ext::default_queue'
+          SubFeatureMap:   {}
+        device_ext_get_device_info_return_info:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_ext::get_device_info'
+          SubFeatureMap:   {}
+        device_ext_queues_wait_and_throw:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_ext::queues_wait_and_throw'
+          SubFeatureMap:   {}
+        device_ext_reset:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\main.cu'
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_ext::reset'
+          SubFeatureMap:   {}
+    device_info:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     device_info
+      SubFeatureMap:
+        device_info_get_integrated:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_integrated'
+          SubFeatureMap:   {}
+        device_info_get_major_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_major_version'
+          SubFeatureMap:   {}
+        device_info_get_max_clock_frequency:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_max_clock_frequency'
+          SubFeatureMap:   {}
+        device_info_get_max_compute_units:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_max_compute_units'
+          SubFeatureMap:   {}
+        device_info_get_minor_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_minor_version'
+          SubFeatureMap:   {}
+        device_info_get_name:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_name'
+          SubFeatureMap:   {}
+        device_info_set_major_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::set_major_version'
+          SubFeatureMap:   {}
+        device_info_set_minor_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::set_minor_version'
+          SubFeatureMap:   {}
+    get_current_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+        - 'D:\GitHub\Blaze\src\main.cu'
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     get_current_device
+      SubFeatureMap:   {}
+    get_default_queue:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+      FeatureName:     get_default_queue
+      SubFeatureMap:   {}
+    select_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     select_device
+      SubFeatureMap:   {}
+  image.hpp:
+    create_image_wrapper:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     create_image_wrapper
+      SubFeatureMap:   {}
+    image_accessor_ext:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+      FeatureName:     image_accessor_ext
+      SubFeatureMap:   {}
+    image_channel:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_channel
+      SubFeatureMap:
+        image_channel_create:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_channel::create'
+          SubFeatureMap:   {}
+    image_data:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_data
+      SubFeatureMap:
+        image_data_set_data:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_data::set_data'
+          SubFeatureMap:   {}
+        image_data_set_data_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_data::set_data_ptr'
+          SubFeatureMap:   {}
+        image_data_set_data_type:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_data::set_data_type'
+          SubFeatureMap:   {}
+    image_data_type:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\driver_types.h'
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_data_type
+      SubFeatureMap:   {}
+    image_matrix:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_matrix
+      SubFeatureMap:   {}
+    image_wrapper_base:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        image_wrapper_base_set_addressing_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_coordinate_normalization_mode_enum:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_filtering_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+    image_wrapper_base_p_alias:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_wrapper_base_p
+      SubFeatureMap:   {}
+    sampling_info:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     sampling_info
+      SubFeatureMap:
+        sampling_info_set_addressing_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+        sampling_info_set_coordinate_normalization_mode_enum:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+        sampling_info_set_filtering_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+  memory.hpp:
+    constant_memory_alias:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+        - 'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+      FeatureName:     constant_memory
+      SubFeatureMap:   {}
+    device_memory:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        device_memory_get_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_memory::get_ptr'
+          SubFeatureMap:   {}
+        device_memory_init:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_memory::init'
+          SubFeatureMap:   {}
+    dpct_accessor:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+      FeatureName:     accessor
+      SubFeatureMap:   {}
+    dpct_memcpy:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memset:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    dpct_memset_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    dpct_memset_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    memcpy_direction:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     memcpy_direction
+      SubFeatureMap:   {}
+    memory_region:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+      FeatureName:     memory_region
+      SubFeatureMap:   {}
+  util.hpp:
+    err_types:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     err_types
+      SubFeatureMap:   {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           'D:\GitHub\Blaze'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           'D:\GitHub\Blaze'
+    Specified:       false
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  CustomHelperFileName:
+    Value:           dpct
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitClNamespace:
+    Value:           'false'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+  VcxprojFile:
+    Value:           'D:\GitHub\Blaze\Blaze.vcxproj'
+    Specified:       true
+...

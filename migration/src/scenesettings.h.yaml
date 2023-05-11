@@ -1,0 +1,1517 @@
+---
+MainSourceFile:  'd:\github\blaze\migration\src\scenesettings.h'
+Replacements:
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          961
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\r\n#include <dpct/dpct.hpp>\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          1135
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     int2 sourceRange;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          1139
+    Length:          4
+    ReplacementText: 'sycl::int2'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          1220
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     int2 renderRange;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          1224
+    Length:          4
+    ReplacementText: 'sycl::int2'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          1245
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float3 domainBboxMin;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          1249
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          1272
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float3 domainBboxMax;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          1276
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          1383
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     int3 gridRes;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          1387
+    Length:          4
+    ReplacementText: 'sycl::int3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          1402
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     int2 renderRes;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          1406
+    Length:          4
+    ReplacementText: 'sycl::int2'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          1749
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float2 turbMaskTempRamp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          1753
+    Length:          6
+    ReplacementText: 'sycl::float2'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          1779
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float2 turbMaskVelRamp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          1783
+    Length:          6
+    ReplacementText: 'sycl::float2'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2060
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float3 lightDir[10]; */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2064
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2130
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float3 lightColor[10]; */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2134
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2249
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float3 camU;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2253
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2267
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float3 camV;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2271
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2285
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float3 camW;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2289
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2303
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float3 camTrans;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2307
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2493
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float3 shaderScattering;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2497
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2523
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float3 shaderVolumeColor;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2527
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2640
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float2 shaderTempRange;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2644
+    Length:          6
+    ReplacementText: 'sycl::float2'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2750
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float3 shaderColorRampColors[10]; */\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2754
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2866
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float2 multiScatterDensityMask;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2870
+    Length:          6
+    ReplacementText: 'sycl::float2'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2903
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG     float3 multiScatterColor;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          2907
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          3338
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         sprintf(tmp, \"sourceRange: (%d, %d)\\n\", sourceRange.x, sourceRange.y); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          3398
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          3413
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          3592
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         sprintf(tmp, \"renderRange: (%d, %d)\\n\\n\", renderRange.x, renderRange.y); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          3654
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          3669
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          3688
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         sprintf(tmp, \"domainBboxMin:  (%4.4f, %4.4f, %4.4f)\\n\", domainBboxMin.x, domainBboxMin.y, domainBboxMin.z); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          3766
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          3783
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          3800
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          3817
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         sprintf(tmp, \"domainBboxMax:  (%4.4f, %4.4f, %4.4f)\\n\", domainBboxMax.x, domainBboxMax.y, domainBboxMax.z); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          3895
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          3912
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          3929
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          4383
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         sprintf(tmp, \"gridRes: (%d, %d, %d)\\n\", gridRes.x, gridRes.y, gridRes.z); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          4439
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          4450
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          4461
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          4478
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         sprintf(tmp, \"renderRes: (%d, %d)\\n\\n\", renderRes.x, renderRes.y); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          4536
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          4549
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          5477
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         sprintf(tmp, \"turbMaskTempRamp: (%4.4f, %4.4f)\\n\", turbMaskTempRamp.x, turbMaskTempRamp.y); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          5553
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          5573
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          5590
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         sprintf(tmp, \"turbMaskVelRamp: (%4.4f, %4.4f)\\n\\n\", turbMaskVelRamp.x, turbMaskVelRamp.y); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          5666
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          5685
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6061
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             sprintf(tmp, \"lightDir: (%4.4f, %4.4f, %4.4f)\\n\", lightDir[i].x,*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6135
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6139
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                                                               lightDir[i].y,*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6213
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6217
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                                                               lightDir[i].z); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6291
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6308
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             sprintf(tmp, \"lightColor: (%4.4f, %4.4f, %4.4f)\\n\", lightColor[i].x,*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6386
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6390
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                                                                 lightColor[i].y,*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6468
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6472
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                                                                 lightColor[i].z); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6550
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6759
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         sprintf(tmp, \"camU: (%4.4f, %4.4f, %4.4f)\\n\", camU.x, camU.y, camU.z); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6818
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6826
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6834
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6851
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         sprintf(tmp, \"camV: (%4.4f, %4.4f, %4.4f)\\n\", camV.x, camV.y, camV.z); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6910
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6918
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6926
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          6943
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         sprintf(tmp, \"camW: (%4.4f, %4.4f, %4.4f)\\n\", camW.x, camW.y, camW.z); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          7002
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          7010
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          7018
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          7035
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         sprintf(tmp, \"camTrans: (%4.4f, %4.4f, %4.4f)\\n\\n\", camTrans.x, camTrans.y, camTrans.z); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          7104
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          7116
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          7128
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          7623
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         sprintf(tmp, \"shaderScattering: (%4.4f, %4.4f, %4.4f)\\n\", shaderScattering.x, shaderScattering.y, shaderScattering.z); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          7706
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          7726
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          7746
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          7763
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         sprintf(tmp, \"shaderVolumeColor: (%4.4f, %4.4f, %4.4f)\\n\", shaderVolumeColor.x, shaderVolumeColor.y, shaderVolumeColor.z); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          7848
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          7869
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          7890
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          8152
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         sprintf(tmp, \"shaderTempRange: (%4.4f, %4.4f)\\n\", shaderTempRange.x, shaderTempRange.y); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          8226
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          8245
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          8409
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG             sprintf(tmp, \"shaderColorRampColors: (%4.4f, %4.4f, %4.4f)\\n\", shaderColorRampColors[i].x,*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          8509
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          8513
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                                                                            shaderColorRampColors[i].y,*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          8613
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          8617
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                                                                            shaderColorRampColors[i].z); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          8717
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          8872
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         sprintf(tmp, \"multiScatterDensityMask: (%4.4f, %4.4f)\\n\", multiScatterDensityMask.x,*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          8962
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          8966
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                                                                   multiScatterDensityMask.y); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          9056
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          9073
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG         sprintf(tmp, \"multiScatterColor: (%4.4f, %4.4f, %4.4f)\\n\", multiScatterColor.x,*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          9158
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          9162
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                                                                    multiScatterColor.y,*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          9247
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          9251
+    Length:          0
+    ReplacementText: "/* DPCT_ORIG                                                                    multiScatterColor.z); msg += tmp;*/\r\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        'D:\GitHub\Blaze\src\SceneSettings.h'
+    Offset:          9336
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  'D:\GitHub\Blaze\src\SceneSettings.h'
+    Digest:          7af83af9f38cfad794aca11a8b3a727a
+DpctVersion:     2023.1.0
+MainHelperFileName: dpct
+USMLevel:        ''
+FeatureMap:
+  atomic.hpp:
+    atomic_fetch_add:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+        - 'D:\GitHub\Blaze\src\Grid.h'
+      FeatureName:     atomic_fetch_add
+      SubFeatureMap:   {}
+  device.hpp:
+    dev_mgr:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        dev_mgr_current_device_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'dev_mgr::current_device_id'
+          SubFeatureMap:   {}
+        dev_mgr_device_count:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'dev_mgr::device_count'
+          SubFeatureMap:   {}
+        dev_mgr_get_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'dev_mgr::get_device'
+          SubFeatureMap:   {}
+    device_ext:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        device_ext_default_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_ext::default_queue'
+          SubFeatureMap:   {}
+        device_ext_get_device_info_return_info:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_ext::get_device_info'
+          SubFeatureMap:   {}
+        device_ext_queues_wait_and_throw:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_ext::queues_wait_and_throw'
+          SubFeatureMap:   {}
+        device_ext_reset:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\main.cu'
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_ext::reset'
+          SubFeatureMap:   {}
+    device_info:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     device_info
+      SubFeatureMap:
+        device_info_get_integrated:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_integrated'
+          SubFeatureMap:   {}
+        device_info_get_major_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_major_version'
+          SubFeatureMap:   {}
+        device_info_get_max_clock_frequency:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_max_clock_frequency'
+          SubFeatureMap:   {}
+        device_info_get_max_compute_units:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_max_compute_units'
+          SubFeatureMap:   {}
+        device_info_get_minor_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_minor_version'
+          SubFeatureMap:   {}
+        device_info_get_name:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::get_name'
+          SubFeatureMap:   {}
+        device_info_set_major_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::set_major_version'
+          SubFeatureMap:   {}
+        device_info_set_minor_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+          FeatureName:     'device_info::set_minor_version'
+          SubFeatureMap:   {}
+    get_current_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+        - 'D:\GitHub\Blaze\src\main.cu'
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     get_current_device
+      SubFeatureMap:   {}
+    get_default_queue:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+      FeatureName:     get_default_queue
+      SubFeatureMap:   {}
+    select_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     select_device
+      SubFeatureMap:   {}
+  image.hpp:
+    create_image_wrapper:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     create_image_wrapper
+      SubFeatureMap:   {}
+    image_accessor_ext:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+      FeatureName:     image_accessor_ext
+      SubFeatureMap:   {}
+    image_channel:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_channel
+      SubFeatureMap:
+        image_channel_create:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_channel::create'
+          SubFeatureMap:   {}
+    image_data:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_data
+      SubFeatureMap:
+        image_data_set_data:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_data::set_data'
+          SubFeatureMap:   {}
+        image_data_set_data_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_data::set_data_ptr'
+          SubFeatureMap:   {}
+        image_data_set_data_type:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_data::set_data_type'
+          SubFeatureMap:   {}
+    image_data_type:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\driver_types.h'
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_data_type
+      SubFeatureMap:   {}
+    image_matrix:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_matrix
+      SubFeatureMap:   {}
+    image_wrapper_base:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        image_wrapper_base_set_addressing_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_coordinate_normalization_mode_enum:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_filtering_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+    image_wrapper_base_p_alias:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     image_wrapper_base_p
+      SubFeatureMap:   {}
+    sampling_info:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\Volume.h'
+      FeatureName:     sampling_info
+      SubFeatureMap:
+        sampling_info_set_addressing_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+        sampling_info_set_coordinate_normalization_mode_enum:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+        sampling_info_set_filtering_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\Volume.h'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+  memory.hpp:
+    constant_memory_alias:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+        - 'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+      FeatureName:     constant_memory
+      SubFeatureMap:   {}
+    device_memory:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        device_memory_get_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_memory::get_ptr'
+          SubFeatureMap:   {}
+        device_memory_init:
+          IsCalled:        true
+          CallerSrcFiles:
+            - 'D:\GitHub\Blaze\src\RenderEngine.cu'
+          FeatureName:     'device_memory::init'
+          SubFeatureMap:   {}
+    dpct_accessor:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+      FeatureName:     accessor
+      SubFeatureMap:   {}
+    dpct_memcpy:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memset:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    dpct_memset_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    dpct_memset_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    memcpy_direction:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\FluidSolver.cu'
+      FeatureName:     memcpy_direction
+      SubFeatureMap:   {}
+    memory_region:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\thirdparty\cuda-noise\cuda_noise.cuh'
+      FeatureName:     memory_region
+      SubFeatureMap:   {}
+  util.hpp:
+    err_types:
+      IsCalled:        true
+      CallerSrcFiles:
+        - 'D:\GitHub\Blaze\src\utils\helper_cuda.h'
+      FeatureName:     err_types
+      SubFeatureMap:   {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           'D:\GitHub\Blaze'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           'D:\GitHub\Blaze'
+    Specified:       false
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  CustomHelperFileName:
+    Value:           dpct
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitClNamespace:
+    Value:           'false'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+  VcxprojFile:
+    Value:           'D:\GitHub\Blaze\Blaze.vcxproj'
+    Specified:       true
+...
