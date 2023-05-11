@@ -1551,19 +1551,19 @@ inline __host__ __device__ float DegToRad(float degrees) { return degrees * M_PI
 
 inline __host__ __device__ float signf(float a) {
 
-	return a < 0 ? -1 : 1;
+	return a < 0.f ? -1.f : 1.f;
 
 }
 
 inline __host__ __device__ float2 signf(float2 a) {
 
-	return make_float2(a.x < 0 ? -1 : 1, a.y < 0 ? -1 : 1);
+	return make_float2(a.x < 0.f ? -1.f : 1.f, a.y < 0.f ? -1.f : 1.f);
 
 }
 
 inline __host__ __device__ float3 signf(float3 a) {
 
-	return make_float3(a.x < 0 ? -1 : 1, a.y < 0 ? -1 : 1, a.z < 0 ? -1 : 1) ;
+	return make_float3(a.x < 0.f ? -1.f : 1.f, a.y < 0.f ? -1.f : 1.f, a.z < 0.f ? -1.f : 1.f) ;
 
 }
 

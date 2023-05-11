@@ -78,22 +78,22 @@ public:
     clock_t writeToDisk_out;
 
     std::string getStats() {
-        float sourceTime = (double)((double)(source_out - source_in)/CLOCKS_PER_SEC);
-        float cooldownTime = (double)((double)(cooldown_out - cooldown_in)/CLOCKS_PER_SEC);
-        float dragTime = (double)((double)(drag_out - drag_in)/CLOCKS_PER_SEC);
-        float buoyancyTime = (double)((double)(buoyancy_out - buoyancy_in)/CLOCKS_PER_SEC);
-        float vorticityTime = (double)((double)(vorticity_out - vorticity_in)/CLOCKS_PER_SEC);
-        float windTime = (double)((double)(wind_out - wind_in)/CLOCKS_PER_SEC);
-        float turbulenceTime = (double)((double)(turbulence_out - turbulence_in)/CLOCKS_PER_SEC);
-        float computeDivergenceTime = (double)((double)(computeDivergence_out - computeDivergence_in)/CLOCKS_PER_SEC);
-        float gsSolveTime = (double)((double)(gsSolve_out - gsSolve_in)/CLOCKS_PER_SEC);
-        float applyPressureGradientTime = (double)((double)(pressureGradientUpdate_out - pressureGradientUpdate_in)/CLOCKS_PER_SEC);
-        float advectTime = (double)((double)(advect_out - advect_in)/CLOCKS_PER_SEC);
-        float scatterTime = (double)((double)(scatter_out - scatter_in)/CLOCKS_PER_SEC);
-        float renderTime = (double)((double)(render_out - render_in)/CLOCKS_PER_SEC);
-        float writeToDiskTime = (double)((double)(writeToDisk_out - writeToDisk_in)/CLOCKS_PER_SEC);
+        double sourceTime = (double)((double)(source_out - source_in)/CLOCKS_PER_SEC);
+        double cooldownTime = (double)((double)(cooldown_out - cooldown_in)/CLOCKS_PER_SEC);
+        double dragTime = (double)((double)(drag_out - drag_in)/CLOCKS_PER_SEC);
+        double buoyancyTime = (double)((double)(buoyancy_out - buoyancy_in)/CLOCKS_PER_SEC);
+        double vorticityTime = (double)((double)(vorticity_out - vorticity_in)/CLOCKS_PER_SEC);
+        double windTime = (double)((double)(wind_out - wind_in)/CLOCKS_PER_SEC);
+        double turbulenceTime = (double)((double)(turbulence_out - turbulence_in)/CLOCKS_PER_SEC);
+        double computeDivergenceTime = (double)((double)(computeDivergence_out - computeDivergence_in)/CLOCKS_PER_SEC);
+        double gsSolveTime = (double)((double)(gsSolve_out - gsSolve_in)/CLOCKS_PER_SEC);
+        double applyPressureGradientTime = (double)((double)(pressureGradientUpdate_out - pressureGradientUpdate_in)/CLOCKS_PER_SEC);
+        double advectTime = (double)((double)(advect_out - advect_in)/CLOCKS_PER_SEC);
+        double scatterTime = (double)((double)(scatter_out - scatter_in)/CLOCKS_PER_SEC);
+        double renderTime = (double)((double)(render_out - render_in)/CLOCKS_PER_SEC);
+        double writeToDiskTime = (double)((double)(writeToDisk_out - writeToDisk_in)/CLOCKS_PER_SEC);
 
-        float totalTime = sourceTime
+        double totalTime = sourceTime
                         + cooldownTime
                         + dragTime
                         + buoyancyTime
