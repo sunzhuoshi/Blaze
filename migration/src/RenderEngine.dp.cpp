@@ -53,8 +53,8 @@ const float RenderEngine::mFilterBlur[RenderEngine::mFilterSize] =
    volumeTexIn, cudaSurfaceObject_t volumeTexOut, int filterSize, cudaExtent
    volumeSize)*/
 void gaussian_blur_texture_kernel(
-    dpct::image_accessor_ext<float, 3> volumeTexIn,
-    cudaSurfaceObject_t volumeTexOut, int filterSize, sycl::range<3> volumeSize,
+    dpct::image_wrapper_base_p volumeTexIn,
+    dpct::image_wrapper_base_p volumeTexOut, int filterSize, sycl::range<3> volumeSize,
     const sycl::nd_item<3> &item_ct1, sycl::float4 *c_filterData)
 {
 /* DPCT_ORIG     int i = threadIdx.x + blockIdx.x * blockDim.x;*/
@@ -82,12 +82,12 @@ void gaussian_blur_texture_kernel(
             dpct_operator_overloading::operator+(basecoord, c_filterData[i]);
 /* DPCT_ORIG         filtered  += tex3D<float>(volumeTexIn, coord.x, coord.y,
  * coord.z) * c_filterData[i].w;*/
-        filtered += volumeTexIn.read(coord.x(), coord.y(), coord.z()) *
-                    c_filterData[i].w();
+        //filtered += volumeTexIn.read(coord.x(), coord.y(), coord.z()) *
+        //            c_filterData[i].w();
     }
 
     // surface writes need byte offsets for x!
-    surf3Dwrite(filtered, volumeTexOut, i*sizeof(float), j, k);
+    dpcx::surf3Dwrite(filtered, volumeTexOut, i*sizeof(float), j, k);
 }
 
 /* DPCT_ORIG __global__ void write_scatter_to_3d_tex_kernel(Grid **tempGrid,
@@ -99,7 +99,7 @@ deduced. You need to update this code.
 */
 void write_scatter_to_3d_tex_kernel(
     Grid **tempGrid,
-    dpct::image_accessor_ext<dpct_placeholder /*Fix the type manually*/, 1>
+    dpct::image_wrapper_base_p
         scatterTex,
     float scatterTempMin, int resRatio, sycl::range<3> volumeSize,
     const sycl::nd_item<3> &item_ct1)
@@ -131,7 +131,7 @@ void write_scatter_to_3d_tex_kernel(
     output /= (float)(resRatio*resRatio*resRatio);
 
     // surface writes need byte offsets for x!
-    surf3Dwrite(output, scatterTex, i*sizeof(float), j, k);
+    dpcx::surf3Dwrite(output, scatterTex, (int)i*sizeof(float), j, k);
 }
 
 /* DPCT_ORIG __global__ void write_temp_to_3d_tex_kernel(Grid **tempGrid,
@@ -142,8 +142,7 @@ deduced. You need to update this code.
 */
 void write_temp_to_3d_tex_kernel(
     Grid **tempGrid,
-    dpct::image_accessor_ext<dpct_placeholder /*Fix the type manually*/, 1>
-        tempTex,
+    dpct::image_wrapper_base_p tempTex,
     const sycl::nd_item<3> &item_ct1)
 {
 /* DPCT_ORIG     int i = threadIdx.x + blockIdx.x * blockDim.x;*/
@@ -161,7 +160,7 @@ void write_temp_to_3d_tex_kernel(
     float output = (*tempGrid)->at(i,j,k);
 
     // surface writes need byte offsets for x!
-    surf3Dwrite(output, tempTex, i*sizeof(float), j, k);
+    dpcx::surf3Dwrite(output, tempTex, (int)i*sizeof(float), j, k);
 }
 
 // https://www.scratchapixel.com/
@@ -376,34 +375,29 @@ void render_kernel(sycl::float3 *frameBuffer, Grid **tempGrid,
 /* DPCT_ORIG __global__ void create_scene_kernel(Camera **d_mCamera, Shader
    **d_mShader, Light **d_mLights, SceneSettings scn, float dx)*/
 void create_scene_kernel(Camera **d_mCamera, Shader **d_mShader,
-                         Light **d_mLights, SceneSettings scn, float dx,
-                         const sycl::nd_item<3> &item_ct1)
+                         Light **d_mLights, SceneSettings scn, float dx)
 {
 /* DPCT_ORIG     if (threadIdx.x == 0 && blockIdx.x == 0) {*/
-    if (item_ct1.get_local_id(2) == 0 && item_ct1.get_group(2) == 0) {
-        *d_mCamera =
-            new Camera(scn.camTrans, scn.camU, scn.camV, scn.camW, scn.camFocal,
-                       /* DPCT_ORIG scn.camAperture, scn.renderRes.x,
-                          scn.renderRes.y);*/
-                       scn.camAperture, scn.renderRes.x(), scn.renderRes.y());
-        *d_mShader = new Shader(scn);
-        for (int i=0; i<scn.lightCount; i++) {
-            d_mLights[i] = new Light(scn, i);
-        }
+    *d_mCamera =
+        new(*d_mCamera) Camera(scn.camTrans, scn.camU, scn.camV, scn.camW, scn.camFocal,
+                    /* DPCT_ORIG scn.camAperture, scn.renderRes.x,
+                        scn.renderRes.y);*/
+                    scn.camAperture, scn.renderRes.x(), scn.renderRes.y());
+    *d_mShader = new(*d_mShader) Shader(scn);
+    for (int i=0; i<scn.lightCount; i++) {
+        d_mLights[i] = new(d_mLights[i]) Light(scn, i);
     }
 }
 
 /* DPCT_ORIG __global__ void delete_scene_kernel(Light **d_mLights, int
    lightCount, Shader **d_mShader, Camera **d_mCamera) {*/
 void delete_scene_kernel(Light **d_mLights, int lightCount, Shader **d_mShader,
-                         Camera **d_mCamera, const sycl::nd_item<3> &item_ct1) {
+                         Camera **d_mCamera) {
 /* DPCT_ORIG     if (threadIdx.x == 0 && blockIdx.x == 0) {*/
-    if (item_ct1.get_local_id(2) == 0 && item_ct1.get_group(2) == 0) {
-        delete *d_mShader;
-        delete *d_mCamera;
-        for (int i=0; i<lightCount; i++) {
-            delete d_mLights[i];
-        }
+    delete *d_mShader;
+    delete *d_mCamera;
+    for (int i=0; i<lightCount; i++) {
+        delete d_mLights[i];
     }
 }
 
@@ -480,19 +474,7 @@ RenderEngine::RenderEngine(Timer *tmr, SceneSettings scn)
                      0));
 /* DPCT_ORIG     create_scene_kernel <<< 1, 1 >>> (d_mCamera, d_mShader,
  * d_mLights, scn, mDx);*/
-    dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-        auto d_mCamera_ct0 = d_mCamera;
-        auto d_mShader_ct1 = d_mShader;
-        auto d_mLights_ct2 = d_mLights;
-        auto mDx_ct4 = mDx;
-
-        cgh.parallel_for(
-            sycl::nd_range<3>(sycl::range<3>(1, 1, 1), sycl::range<3>(1, 1, 1)),
-            [=](sycl::nd_item<3> item_ct1) {
-                create_scene_kernel(d_mCamera_ct0, d_mShader_ct1, d_mLights_ct2,
-                                    scn, mDx_ct4, item_ct1);
-            });
-    });
+    create_scene_kernel(d_mCamera, d_mShader, d_mLights, scn, mDx);
 /* DPCT_ORIG     checkCudaErrors(cudaGetLastError());*/
     /*
     DPCT1010:226: SYCL uses exceptions to report errors and does not use the
@@ -553,19 +535,7 @@ RenderEngine::~RenderEngine() {
     checkCudaErrors((sycl::free(mFrameBuffer, dpct::get_default_queue()), 0));
 /* DPCT_ORIG     delete_scene_kernel <<< 1, 1 >>> (d_mLights, mLightCount,
  * d_mShader, d_mCamera);*/
-    dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-        auto d_mLights_ct0 = d_mLights;
-        auto mLightCount_ct1 = mLightCount;
-        auto d_mShader_ct2 = d_mShader;
-        auto d_mCamera_ct3 = d_mCamera;
-
-        cgh.parallel_for(
-            sycl::nd_range<3>(sycl::range<3>(1, 1, 1), sycl::range<3>(1, 1, 1)),
-            [=](sycl::nd_item<3> item_ct1) {
-                delete_scene_kernel(d_mLights_ct0, mLightCount_ct1,
-                                    d_mShader_ct2, d_mCamera_ct3, item_ct1);
-            });
-    });
+    delete_scene_kernel(d_mLights, mLightCount, d_mShader, d_mCamera);
 /* DPCT_ORIG     checkCudaErrors(cudaGetLastError());*/
     /*
     DPCT1010:230: SYCL uses exceptions to report errors and does not use the
@@ -765,12 +735,15 @@ void RenderEngine::render(Grid **tempGrid) {
         auto mSStep_ct11 = mSStep;
         auto mCutoff_ct12 = mCutoff;
 
+        auto mTempVol_volumeTex = dpcx::ImageToAccessorExt<float, 3>(mTempVol_volumeTex_ct2, cgh);
+        auto mScatterFrontVol_volumeTex = dpcx::ImageToAccessorExt<float, 3>(mScatterFrontVol_volumeTex_ct3, cgh);
+
         cgh.parallel_for(sycl::nd_range<3>(grid * block, block),
                          [=](sycl::nd_item<3> item_ct1) {
                              render_kernel(
                                  mFrameBuffer_ct0, tempGrid,
-                                 mTempVol_volumeTex_ct2,
-                                 mScatterFrontVol_volumeTex_ct3, d_mShader_ct4,
+                                 mTempVol_volumeTex,
+                                 mScatterFrontVol_volumeTex, d_mShader_ct4,
                                  d_mLights_ct5, mLightCount_ct6, d_mCamera_ct7,
                                  mDx_ct8, mScatterResRatio_ct9, mPStep_ct10,
                                  mSStep_ct11, mCutoff_ct12, item_ct1);

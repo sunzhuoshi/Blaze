@@ -37,34 +37,27 @@ void create_grids_kernel(Grid **d_mT, Grid **d_mU, Grid **d_mV, Grid **d_mW,
                          float *d_mTFront, float *d_mTBack, float *d_mUFront,
                          float *d_mUBack, float *d_mVFront, float *d_mVBack,
                          float *d_mWFront, float *d_mWBack, int width,
-                         int height, int depth, float dx, SceneSettings scn,
-                         const sycl::nd_item<3> &item_ct1)
+                         int height, int depth, float dx, SceneSettings scn)
 {
 /* DPCT_ORIG     if (threadIdx.x == 0 && blockIdx.x == 0) {*/
-    if (item_ct1.get_local_id(2) == 0 && item_ct1.get_group(2) == 0) {
-        *d_mT = new Grid(d_mTFront, d_mTBack, width, height, depth, 0.5f, 0.5f, 0.5f, dx,
-                         scn.domainBboxMin, scn.domainBboxMax, false, scn);
-        *d_mU = new Grid(d_mUFront, d_mUBack, width+1, height, depth, 0.0f, 0.5f, 0.5f, dx,
-                         scn.domainBboxMin, scn.domainBboxMax, false,  scn);
-        *d_mV = new Grid(d_mVFront, d_mVBack, width, height+1, depth, 0.5f, 0.0f, 0.5f, dx,
-                         scn.domainBboxMin, scn.domainBboxMax, true,  scn);
-        *d_mW = new Grid(d_mWFront, d_mWBack, width, height, depth+1, 0.5f, 0.5f, 0.0f, dx,
-                         scn.domainBboxMin, scn.domainBboxMax, false,  scn);
-    }
+    *d_mT = new(*d_mT) Grid(d_mTFront, d_mTBack, width, height, depth, 0.5f, 0.5f, 0.5f, dx,
+                        scn.domainBboxMin, scn.domainBboxMax, false, scn);
+    *d_mU = new(*d_mU) Grid(d_mUFront, d_mUBack, width+1, height, depth, 0.0f, 0.5f, 0.5f, dx,
+                        scn.domainBboxMin, scn.domainBboxMax, false,  scn);
+    *d_mV = new(d_mV) Grid(d_mVFront, d_mVBack, width, height+1, depth, 0.5f, 0.0f, 0.5f, dx,
+                        scn.domainBboxMin, scn.domainBboxMax, true,  scn);
+    *d_mW = new(d_mW) Grid(d_mWFront, d_mWBack, width, height, depth+1, 0.5f, 0.5f, 0.0f, dx,
+                        scn.domainBboxMin, scn.domainBboxMax, false,  scn);
 }
 
 /* DPCT_ORIG __global__ void free_grids_kernel(Grid **d_mT, Grid **d_mU, Grid
  * **d_mV, Grid **d_mW)*/
-void free_grids_kernel(Grid **d_mT, Grid **d_mU, Grid **d_mV, Grid **d_mW,
-                       const sycl::nd_item<3> &item_ct1)
+void free_grids_kernel(Grid **d_mT, Grid **d_mU, Grid **d_mV, Grid **d_mW)
 {
-/* DPCT_ORIG     if (threadIdx.x == 0 && blockIdx.x == 0) {*/
-    if (item_ct1.get_local_id(2) == 0 && item_ct1.get_group(2) == 0) {
-        delete *d_mT;
-        delete *d_mU;
-        delete *d_mV;
-        delete *d_mW;
-    }
+    delete *d_mT;
+    delete *d_mU;
+    delete *d_mV;
+    delete *d_mW;
 }
 
 /* DPCT_ORIG __global__ void clear_back_buffer_kernel(Grid **d_mT, Grid **d_mU,
@@ -1311,35 +1304,11 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
 /* DPCT_ORIG     create_grids_kernel<<<1,1>>>(d_mT, d_mU, d_mV, d_mW, d_mTFront,
    d_mTBack, d_mUFront, d_mUBack, d_mVFront, d_mVBack, d_mWFront, d_mWBack,
    mWidth, mHeight, mDepth, mDx, *scn);*/
-    dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-        auto d_mT_ct0 = d_mT;
-        auto d_mU_ct1 = d_mU;
-        auto d_mV_ct2 = d_mV;
-        auto d_mW_ct3 = d_mW;
-        auto d_mTFront_ct4 = d_mTFront;
-        auto d_mTBack_ct5 = d_mTBack;
-        auto d_mUFront_ct6 = d_mUFront;
-        auto d_mUBack_ct7 = d_mUBack;
-        auto d_mVFront_ct8 = d_mVFront;
-        auto d_mVBack_ct9 = d_mVBack;
-        auto d_mWFront_ct10 = d_mWFront;
-        auto d_mWBack_ct11 = d_mWBack;
-        auto mWidth_ct12 = mWidth;
-        auto mHeight_ct13 = mHeight;
-        auto mDepth_ct14 = mDepth;
-        auto mDx_ct15 = mDx;
-        auto scn_ct16 = *scn;
-
-        cgh.parallel_for(
-            sycl::nd_range<3>(sycl::range<3>(1, 1, 1), sycl::range<3>(1, 1, 1)),
-            [=](sycl::nd_item<3> item_ct1) {
-                create_grids_kernel(
-                    d_mT_ct0, d_mU_ct1, d_mV_ct2, d_mW_ct3, d_mTFront_ct4,
-                    d_mTBack_ct5, d_mUFront_ct6, d_mUBack_ct7, d_mVFront_ct8,
-                    d_mVBack_ct9, d_mWFront_ct10, d_mWBack_ct11, mWidth_ct12,
-                    mHeight_ct13, mDepth_ct14, mDx_ct15, scn_ct16, item_ct1);
-            });
-    });
+    create_grids_kernel(
+        d_mT, d_mU, d_mV, d_mW, d_mTFront,
+        d_mTBack, d_mUFront, d_mUBack, d_mVFront,
+        d_mVBack, d_mWFront, d_mWBack, mWidth,
+        mHeight, mDepth, mDx, *scn);
 /* DPCT_ORIG     checkCudaErrors(cudaGetLastError());*/
     /*
     DPCT1010:268: SYCL uses exceptions to report errors and does not use the
@@ -1412,19 +1381,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
 FluidSolver::~FluidSolver() {
     // grids arrays
 /* DPCT_ORIG     free_grids_kernel<<<1,1>>>(d_mT, d_mU, d_mV, d_mW);*/
-    dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-        auto d_mT_ct0 = d_mT;
-        auto d_mU_ct1 = d_mU;
-        auto d_mV_ct2 = d_mV;
-        auto d_mW_ct3 = d_mW;
-
-        cgh.parallel_for(
-            sycl::nd_range<3>(sycl::range<3>(1, 1, 1), sycl::range<3>(1, 1, 1)),
-            [=](sycl::nd_item<3> item_ct1) {
-                free_grids_kernel(d_mT_ct0, d_mU_ct1, d_mV_ct2, d_mW_ct3,
-                                  item_ct1);
-            });
-    });
+    free_grids_kernel(d_mT, d_mU, d_mV, d_mW);
 /* DPCT_ORIG     checkCudaErrors(cudaGetLastError());*/
     /*
     DPCT1010:275: SYCL uses exceptions to report errors and does not use the
