@@ -42,8 +42,6 @@ void create_grids_kernel(Grid **d_mT, Grid **d_mU, Grid **d_mV, Grid **d_mW,
 {
 /* DPCT_ORIG     if (threadIdx.x == 0 && blockIdx.x == 0) {*/
     if (item_ct1.get_local_id(2) == 0 && item_ct1.get_group(2) == 0) {
-        // temp
-        /*
         *d_mT = new Grid(d_mTFront, d_mTBack, width, height, depth, 0.5f, 0.5f, 0.5f, dx,
                          scn.domainBboxMin, scn.domainBboxMax, false, scn);
         *d_mU = new Grid(d_mUFront, d_mUBack, width+1, height, depth, 0.0f, 0.5f, 0.5f, dx,
@@ -52,7 +50,6 @@ void create_grids_kernel(Grid **d_mT, Grid **d_mU, Grid **d_mV, Grid **d_mW,
                          scn.domainBboxMin, scn.domainBboxMax, true,  scn);
         *d_mW = new Grid(d_mWFront, d_mWBack, width, height, depth+1, 0.5f, 0.5f, 0.0f, dx,
                          scn.domainBboxMin, scn.domainBboxMax, false,  scn);
-        */
     }
 }
 

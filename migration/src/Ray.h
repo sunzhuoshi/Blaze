@@ -46,8 +46,7 @@ public:
            mT0(0.0f), mT1(uint_as_float(0x7f800000)),*/
         : mOrig(orig), mDir(dir),
           mInvdir(dpct_operator_overloading::operator/(1.0f, dir)), mT0(0.0f),
-          // temp
-          //mT1(uint_as_float(0x7f800000)),
+          mT1(uint_as_float(0x7f800000)),
           /* DPCT_ORIG           mSign(make_uint3( mInvdir.x < 0.0f, mInvdir.y <
              0.0f, mInvdir.z < 0.0f ))*/
           mSign(sycl::uint3(mInvdir.x() < 0.0f, mInvdir.y() < 0.0f,
