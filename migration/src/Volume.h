@@ -30,7 +30,7 @@ freely, subject to the following restrictions:
 #include <dpct/dpct.hpp>
 #include "utils/helper_cuda.h"
 #include "utils/helper_math.h"
-
+#include "dpcx/dpcx.hpp"
 
 class Volume {
 
@@ -43,7 +43,7 @@ public:
     dpct::image_channel channelDesc;
 /* DPCT_ORIG     cudaTextureObject_t   volumeTex;*/
     dpct::image_wrapper_base_p volumeTex;
-    cudaSurfaceObject_t   volumeSurf;
+    dpct::image_wrapper_base_p volumeSurf;
 
     Volume(int w, int h, int d){
         // create 3D array
@@ -77,7 +77,7 @@ public:
         /*
         DPCT1007:218: Migration of cudaCreateSurfaceObject is not supported.
         */
-        checkCudaErrors(cudaCreateSurfaceObject(&volumeSurf, &surfRes));
+        checkCudaErrors(dpcx::CreateSurfaceObject(&volumeSurf, &surfRes));
 
 /* DPCT_ORIG         cudaResourceDesc texRes;*/
         dpct::image_data texRes;
@@ -121,7 +121,7 @@ public:
         /*
         DPCT1007:219: Migration of cudaDestroySurfaceObject is not supported.
         */
-        checkCudaErrors(cudaDestroySurfaceObject(volumeSurf));
+        checkCudaErrors(dpcx::DestroySurfaceObject(volumeSurf));
 /* DPCT_ORIG         checkCudaErrors(cudaFreeArray(content));*/
         /*
         DPCT1003:220: Migrated API does not return error code. (*, 0) is
