@@ -33,6 +33,7 @@
     <ClInclude Include="src\utils\helper_string.h" />
     <ClInclude Include="src\Volume.h" />
     <ClInclude Include="thirdparty\cuda-noise\cuda_noise.dp.hpp" />
+    <ClInclude Include="thirdparty\dpcx\dpcx.hpp" />
     <ClInclude Include="thirdparty\lodepng\lodepng.h" />
     <ClInclude Include="thirdparty\rapidjson\allocators.h" />
     <ClInclude Include="thirdparty\rapidjson\document.h" />
@@ -92,10 +93,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Program Files (x86)\Intel\oneAPI\dpcpp-ct\2023.1.0\include;$(oneTBBProductDir)\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Program Files (x86)\Intel\oneAPI\dpcpp-ct\2023.1.0\include;$(oneTBBProductDir)\include;.\thirdparty;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files (x86)\Intel\oneAPI\dpcpp-ct\2023.1.0\include;$(ProjectDir)\thirdparty;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Label="Migrated">
     <FromCUProject>D:\GitHub\Blaze\Blaze.vcxproj</FromCUProject>
@@ -110,9 +112,9 @@
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <SYCLWarningLevel>Level3</SYCLWarningLevel>
-      <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_CONSOLE;_MBCS;_DEBUG;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_CONSOLE;_MBCS;_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/Zc:__cplusplus -w %(AdditionalOptions)</AdditionalOptions>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <AdditionalIncludeDirectories>;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SYCLOptimization>Disabled</SYCLOptimization>
@@ -129,7 +131,7 @@
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <SYCLWarningLevel>Level3</SYCLWarningLevel>
-      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
