@@ -26,8 +26,28 @@
         }
     }
     ```
-## Inadequate CUDA runtime support
+    Solution:
 
-Around 50% of CUDA runtime API supported
+    Rewrite code manually
+## Inadequate CUDA runtime API migration support
+
+Around 50% of CUDA runtime API migration supported
 
 Source: https://github.com/oneapi-src/SYCLomatic/blob/SYCLomatic/docs/dev_guide/api-mapping-status/Runtime_and_Driver_API_migration_status.csv 
+
+Unsupported API list in current project:
+```
+cudaSurfaceObject_t
+cudaCreateSurfaceObject()
+cudaDestroySurfaceObject()
+surf3Dwrite()
+```
+Solution:
+
+Migrate APIs manually without DPCT support
+
+## Other issues
+https://github.com/oneapi-src/SYCLomatic/issues/903
+## Reference
+https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compatibility-tool.html
+https://www.codingame.com/playgrounds/53666/dpc/unified-shared-memory
