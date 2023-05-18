@@ -43,10 +43,10 @@ private:
     SceneSettings *mScn;
     Timer *mTmr;
 
-    Grid **d_mT;
-    Grid **d_mU;
-    Grid **d_mV;
-    Grid **d_mW;
+    Grid *d_mT;
+    Grid *d_mU;
+    Grid *d_mV;
+    Grid *d_mW;
 
     // declare fluid device array
     int mByteSize;
@@ -113,7 +113,7 @@ public:
     ~FluidSolver();
     void addSource();
     void step ();
-    Grid **getTempGrid() { return d_mT; }
+    Grid **getTempGrid() { return &d_mT; }
 
 };
 

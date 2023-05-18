@@ -52,9 +52,9 @@ class RenderEngine {
 private:
     Timer *mTmr;
 
-    Shader **d_mShader;
-    Camera **d_mCamera;
-    Light **d_mLights;
+    Shader *d_mShader;
+    Camera *d_mCamera;
+    Light *d_mLights;
     int mLightCount;
 
     int mWidth;

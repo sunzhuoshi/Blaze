@@ -374,31 +374,30 @@ void render_kernel(sycl::float3 *frameBuffer, Grid **tempGrid,
 
 /* DPCT_ORIG __global__ void create_scene_kernel(Camera **d_mCamera, Shader
    **d_mShader, Light **d_mLights, SceneSettings scn, float dx)*/
-void create_scene_kernel(Camera **d_mCamera, Shader **d_mShader,
-                         Light **d_mLights, SceneSettings scn, float dx)
+void create_scene_kernel(Camera *d_mCamera, Shader *d_mShader,
+                         Light *d_mLights, SceneSettings scn, float dx)
 {
 /* DPCT_ORIG     if (threadIdx.x == 0 && blockIdx.x == 0) {*/
-    *d_mCamera =
-        new(*d_mCamera) Camera(scn.camTrans, scn.camU, scn.camV, scn.camW, scn.camFocal,
+    dpcx::init_device_mem(d_mCamera, new Camera(scn.camTrans, scn.camU, scn.camV, scn.camW, scn.camFocal,
                     /* DPCT_ORIG scn.camAperture, scn.renderRes.x,
                         scn.renderRes.y);*/
-                    scn.camAperture, scn.renderRes.x(), scn.renderRes.y());
-    *d_mShader = new(*d_mShader) Shader(scn);
+                    scn.camAperture, scn.renderRes.x(), scn.renderRes.y()));
+    
+    dpcx::init_device_mem(d_mShader, new Shader(scn));
+    
     for (int i=0; i<scn.lightCount; i++) {
-        d_mLights[i] = new(d_mLights[i]) Light(scn, i);
+        dpcx::init_device_mem(&d_mLights[i], new Light(scn, i));
     }
 }
 
 /* DPCT_ORIG __global__ void delete_scene_kernel(Light **d_mLights, int
    lightCount, Shader **d_mShader, Camera **d_mCamera) {*/
-void delete_scene_kernel(Light **d_mLights, int lightCount, Shader **d_mShader,
-                         Camera **d_mCamera) {
+void delete_scene_kernel(Light *d_mLights, int lightCount, Shader *d_mShader,
+                         Camera *d_mCamera) {
 /* DPCT_ORIG     if (threadIdx.x == 0 && blockIdx.x == 0) {*/
-    delete *d_mShader;
-    delete *d_mCamera;
-    for (int i=0; i<lightCount; i++) {
-        delete d_mLights[i];
-    }
+    dpcx::free(d_mShader);
+    dpcx::free(d_mCamera);
+    dpcx::free(d_mLights);
 }
 
 RenderEngine::RenderEngine(Timer *tmr, SceneSettings scn)
@@ -452,7 +451,7 @@ RenderEngine::RenderEngine(Timer *tmr, SceneSettings scn)
     You may need to rewrite this code.
     */
     checkCudaErrors((
-        d_mShader = sycl::malloc_device<Shader *>(1, dpct::get_default_queue()),
+        d_mShader = sycl::malloc_device<Shader>(1, dpct::get_default_queue()),
         0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void **)&d_mCamera, sizeof(Camera
  * *)));*/
@@ -461,7 +460,7 @@ RenderEngine::RenderEngine(Timer *tmr, SceneSettings scn)
     You may need to rewrite this code.
     */
     checkCudaErrors((
-        d_mCamera = sycl::malloc_device<Camera *>(1, dpct::get_default_queue()),
+        d_mCamera = sycl::malloc_device<Camera>(1, dpct::get_default_queue()),
         0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void **)&d_mLights,
  * scn.lightCount*sizeof(Light *)));*/
@@ -469,7 +468,7 @@ RenderEngine::RenderEngine(Timer *tmr, SceneSettings scn)
     DPCT1003:225: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mLights = sycl::malloc_device<Light *>(
+    checkCudaErrors((d_mLights = sycl::malloc_device<Light>(
                          scn.lightCount, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     create_scene_kernel <<< 1, 1 >>> (d_mCamera, d_mShader,
@@ -725,10 +724,10 @@ void RenderEngine::render(Grid **tempGrid) {
         auto mFrameBuffer_ct0 = mFrameBuffer;
         auto mTempVol_volumeTex_ct2 = mTempVol->volumeTex;
         auto mScatterFrontVol_volumeTex_ct3 = mScatterFrontVol->volumeTex;
-        auto d_mShader_ct4 = d_mShader;
-        auto d_mLights_ct5 = d_mLights;
+        auto d_mShader_ct4 = &d_mShader;
+        auto d_mLights_ct5 = &d_mLights;
         auto mLightCount_ct6 = mLightCount;
-        auto d_mCamera_ct7 = d_mCamera;
+        auto d_mCamera_ct7 = &d_mCamera;
         auto mDx_ct8 = mDx;
         auto mScatterResRatio_ct9 = mScatterResRatio;
         auto mPStep_ct10 = mPStep;

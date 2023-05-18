@@ -25,6 +25,7 @@ freely, subject to the following restrictions:
 #include <sycl/sycl.hpp>
 #include <dpct/dpct.hpp>
 #include "../thirdparty/cuda-noise/cuda_noise.dp.hpp"
+#include "dpcx/dpcx.hpp"
 
 #include "FluidSolver.h"
 #include <time.h>
@@ -33,31 +34,31 @@ freely, subject to the following restrictions:
    **d_mV, Grid **d_mW, float *d_mTFront, float *d_mTBack, float *d_mUFront,
    float *d_mUBack, float *d_mVFront, float *d_mVBack, float *d_mWFront, float
    *d_mWBack, int width, int height, int depth, float dx, SceneSettings scn)*/
-void create_grids_kernel(Grid **d_mT, Grid **d_mU, Grid **d_mV, Grid **d_mW,
+void create_grids_kernel(Grid *d_mT, Grid *d_mU, Grid *d_mV, Grid *d_mW,
                          float *d_mTFront, float *d_mTBack, float *d_mUFront,
                          float *d_mUBack, float *d_mVFront, float *d_mVBack,
                          float *d_mWFront, float *d_mWBack, int width,
                          int height, int depth, float dx, SceneSettings scn)
 {
 /* DPCT_ORIG     if (threadIdx.x == 0 && blockIdx.x == 0) {*/
-    *d_mT = new(*d_mT) Grid(d_mTFront, d_mTBack, width, height, depth, 0.5f, 0.5f, 0.5f, dx,
-                        scn.domainBboxMin, scn.domainBboxMax, false, scn);
-    *d_mU = new(*d_mU) Grid(d_mUFront, d_mUBack, width+1, height, depth, 0.0f, 0.5f, 0.5f, dx,
-                        scn.domainBboxMin, scn.domainBboxMax, false,  scn);
-    *d_mV = new(d_mV) Grid(d_mVFront, d_mVBack, width, height+1, depth, 0.5f, 0.0f, 0.5f, dx,
-                        scn.domainBboxMin, scn.domainBboxMax, true,  scn);
-    *d_mW = new(d_mW) Grid(d_mWFront, d_mWBack, width, height, depth+1, 0.5f, 0.5f, 0.0f, dx,
-                        scn.domainBboxMin, scn.domainBboxMax, false,  scn);
+    dpcx::init_device_mem(d_mT, new Grid(d_mTFront, d_mTBack, width, height, depth, 0.5f, 0.5f, 0.5f, dx,
+                        scn.domainBboxMin, scn.domainBboxMax, false, scn));
+    dpcx::init_device_mem(d_mU, new Grid(d_mUFront, d_mUBack, width+1, height, depth, 0.0f, 0.5f, 0.5f, dx,
+                        scn.domainBboxMin, scn.domainBboxMax, false, scn));
+    dpcx::init_device_mem(d_mV, new Grid(d_mVFront, d_mVBack, width, height+1, depth, 0.5f, 0.0f, 0.5f, dx,
+                        scn.domainBboxMin, scn.domainBboxMax, true,  scn));
+    dpcx::init_device_mem(d_mW, new Grid(d_mWFront, d_mWBack, width, height, depth+1, 0.5f, 0.5f, 0.0f, dx,
+                        scn.domainBboxMin, scn.domainBboxMax, false, scn));
 }
 
 /* DPCT_ORIG __global__ void free_grids_kernel(Grid **d_mT, Grid **d_mU, Grid
  * **d_mV, Grid **d_mW)*/
-void free_grids_kernel(Grid **d_mT, Grid **d_mU, Grid **d_mV, Grid **d_mW)
+void free_grids_kernel(Grid *d_mT, Grid *d_mU, Grid *d_mV, Grid *d_mW)
 {
-    delete *d_mT;
-    delete *d_mU;
-    delete *d_mV;
-    delete *d_mW;
+    dpcx::free(d_mT);
+    dpcx::free(d_mU);
+    dpcx::free(d_mV);
+    dpcx::free(d_mW);
 }
 
 /* DPCT_ORIG __global__ void clear_back_buffer_kernel(Grid **d_mT, Grid **d_mU,
@@ -1132,7 +1133,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:245: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mTFront = (float *)sycl::malloc_device(
+    checkCudaErrors((d_mTFront = (float *)sycl::malloc_shared(
                          mByteSize, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void**)&d_mTBack, mByteSize));*/
@@ -1140,7 +1141,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:246: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mTBack = (float *)sycl::malloc_device(
+    checkCudaErrors((d_mTBack = (float *)sycl::malloc_shared(
                          mByteSize, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void**)&d_mUFront, mByteSizeU));*/
@@ -1148,7 +1149,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:247: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mUFront = (float *)sycl::malloc_device(
+    checkCudaErrors((d_mUFront = (float *)sycl::malloc_shared(
                          mByteSizeU, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void**)&d_mUBack, mByteSizeU));*/
@@ -1156,7 +1157,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:248: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mUBack = (float *)sycl::malloc_device(
+    checkCudaErrors((d_mUBack = (float *)sycl::malloc_shared(
                          mByteSizeU, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void**)&d_mVFront, mByteSizeV));*/
@@ -1164,7 +1165,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:249: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mVFront = (float *)sycl::malloc_device(
+    checkCudaErrors((d_mVFront = (float *)sycl::malloc_shared(
                          mByteSizeV, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void**)&d_mVBack, mByteSizeV));*/
@@ -1172,7 +1173,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:250: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mVBack = (float *)sycl::malloc_device(
+    checkCudaErrors((d_mVBack = (float *)sycl::malloc_shared(
                          mByteSizeV, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void**)&d_mWFront, mByteSizeW));*/
@@ -1180,7 +1181,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:251: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mWFront = (float *)sycl::malloc_device(
+    checkCudaErrors((d_mWFront = (float *)sycl::malloc_shared(
                          mByteSizeW, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void**)&d_mWBack, mByteSizeW));*/
@@ -1188,7 +1189,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:252: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mWBack = (float *)sycl::malloc_device(
+    checkCudaErrors((d_mWBack = (float *)sycl::malloc_shared(
                          mByteSizeW, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMemset(d_mTFront, 0, mByteSize));*/
@@ -1253,7 +1254,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:261: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mRhs = (float *)sycl::malloc_device(
+    checkCudaErrors((d_mRhs = (float *)sycl::malloc_shared(
                          mByteSize, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void**)&d_mP, mByteSize));*/
@@ -1261,7 +1262,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:262: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mP = (float *)sycl::malloc_device(
+    checkCudaErrors((d_mP = (float *)sycl::malloc_shared(
                          mByteSize, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMemset(d_mP, 0, mByteSize));*/
@@ -1279,28 +1280,28 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     You may need to rewrite this code.
     */
     checkCudaErrors(
-        (d_mT = sycl::malloc_device<Grid *>(1, dpct::get_default_queue()), 0));
+        (d_mT = sycl::malloc_device<Grid>(1, dpct::get_default_queue()), 0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void **)&d_mU, sizeof(Grid *)));*/
     /*
     DPCT1003:265: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
     checkCudaErrors(
-        (d_mU = sycl::malloc_device<Grid *>(1, dpct::get_default_queue()), 0));
+        (d_mU = sycl::malloc_device<Grid>(1, dpct::get_default_queue()), 0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void **)&d_mV, sizeof(Grid *)));*/
     /*
     DPCT1003:266: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
     checkCudaErrors(
-        (d_mV = sycl::malloc_device<Grid *>(1, dpct::get_default_queue()), 0));
+        (d_mV = sycl::malloc_device<Grid>(1, dpct::get_default_queue()), 0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void **)&d_mW, sizeof(Grid *)));*/
     /*
     DPCT1003:267: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
     checkCudaErrors(
-        (d_mW = sycl::malloc_device<Grid *>(1, dpct::get_default_queue()), 0));
+        (d_mW = sycl::malloc_device<Grid>(1, dpct::get_default_queue()), 0));
 /* DPCT_ORIG     create_grids_kernel<<<1,1>>>(d_mT, d_mU, d_mV, d_mW, d_mTFront,
    d_mTBack, d_mUFront, d_mUBack, d_mVFront, d_mVBack, d_mWFront, d_mWBack,
    mWidth, mHeight, mDepth, mDx, *scn);*/
@@ -1483,6 +1484,10 @@ FluidSolver::~FluidSolver() {
 
 void FluidSolver::addSource() {
   dpct::device_ext &dev_ct1 = dpct::get_current_device();
+  auto info = dev_ct1.get_device_info();
+
+  std::cout << "Currunt device: " << info.get_name() << std::endl;
+
   sycl::queue &q_ct1 = dev_ct1.default_queue();
 
     /*
@@ -1568,7 +1573,8 @@ void FluidSolver::addSource() {
         if (mParticleCount > 0) {
             // clear back buffers
 /* DPCT_ORIG             dim3 block(8, 8, 8);*/
-            sycl::range<3> block(8, 8, 8);
+            //sycl::range<3> block(8, 8, 8);
+            sycl::range<3> block(4, 4, 4);
 /* DPCT_ORIG             dim3 grid((mWidth+1)/block.x+1, (mHeight+1)/block.y+1,
  * (mDepth+1)/block.z+1);*/
             sycl::range<3> grid((mDepth + 1) / block[0] + 1,
@@ -1583,10 +1589,10 @@ void FluidSolver::addSource() {
             needed.
             */
             dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-                auto d_mT_ct0 = d_mT;
-                auto d_mU_ct1 = d_mU;
-                auto d_mV_ct2 = d_mV;
-                auto d_mW_ct3 = d_mW;
+                auto d_mT_ct0 = &d_mT;
+                auto d_mU_ct1 = &d_mU;
+                auto d_mV_ct2 = &d_mV;
+                auto d_mW_ct3 = &d_mW;
 
                 cgh.parallel_for(sycl::nd_range<3>(grid * block, block),
                                  [=](sycl::nd_item<3> item_ct1) {
@@ -1625,10 +1631,10 @@ void FluidSolver::addSource() {
             needed.
             */
             dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-                auto d_mT_ct0 = d_mT;
-                auto d_mU_ct1 = d_mU;
-                auto d_mV_ct2 = d_mV;
-                auto d_mW_ct3 = d_mW;
+                auto d_mT_ct0 = &d_mT;
+                auto d_mU_ct1 = &d_mU;
+                auto d_mV_ct2 = &d_mV;
+                auto d_mW_ct3 = &d_mW;
                 auto d_mPartPos_ct4 = d_mPartPos;
                 auto d_mPartVel_ct5 = d_mPartVel;
                 auto d_mPartPscale_ct6 = d_mPartPscale;
@@ -1671,10 +1677,10 @@ void FluidSolver::addSource() {
             needed.
             */
             dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-                auto d_mT_ct0 = d_mT;
-                auto d_mU_ct1 = d_mU;
-                auto d_mV_ct2 = d_mV;
-                auto d_mW_ct3 = d_mW;
+                auto d_mT_ct0 = &d_mT;
+                auto d_mU_ct1 = &d_mU;
+                auto d_mV_ct2 = &d_mV;
+                auto d_mW_ct3 = &d_mW;
 
                 cgh.parallel_for(sycl::nd_range<3>(grid * block, block),
                                  [=](sycl::nd_item<3> item_ct1) {
@@ -1734,9 +1740,9 @@ void FluidSolver::project() {
     */
     dpct::get_default_queue().submit([&](sycl::handler &cgh) {
         auto d_mRhs_ct0 = d_mRhs;
-        auto d_mU_ct1 = d_mU;
-        auto d_mV_ct2 = d_mV;
-        auto d_mW_ct3 = d_mW;
+        auto d_mU_ct1 = &d_mU;
+        auto d_mV_ct2 = &d_mV;
+        auto d_mW_ct3 = &d_mW;
         auto mWidth_ct4 = mWidth;
         auto mHeight_ct5 = mHeight;
         auto mDepth_ct6 = mDepth;
@@ -1850,9 +1856,9 @@ void FluidSolver::project() {
     */
     dpct::get_default_queue().submit([&](sycl::handler &cgh) {
         auto d_mP_ct0 = d_mP;
-        auto d_mU_ct1 = d_mU;
-        auto d_mV_ct2 = d_mV;
-        auto d_mW_ct3 = d_mW;
+        auto d_mU_ct1 = &d_mU;
+        auto d_mV_ct2 = &d_mV;
+        auto d_mW_ct3 = &d_mW;
         auto mWidth_ct4 = mWidth;
         auto mHeight_ct5 = mHeight;
         auto mDepth_ct6 = mDepth;
@@ -1932,7 +1938,7 @@ void FluidSolver::step() {
         info::device::max_work_group_size. Adjust the work-group size if needed.
         */
         dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-            auto d_mT_ct0 = d_mT;
+            auto d_mT_ct0 = &d_mT;
             auto mCoolingRate_ct1 = mCoolingRate;
             auto mDt_ct2 = mDt;
 
@@ -1982,9 +1988,9 @@ void FluidSolver::step() {
         info::device::max_work_group_size. Adjust the work-group size if needed.
         */
         dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-            auto d_mU_ct0 = d_mU;
-            auto d_mV_ct1 = d_mV;
-            auto d_mW_ct2 = d_mW;
+            auto d_mU_ct0 = &d_mU;
+            auto d_mV_ct1 = &d_mV;
+            auto d_mW_ct2 = &d_mW;
             auto mDrag_ct3 = mDrag;
             auto mDt_ct4 = mDt;
 
@@ -2034,9 +2040,9 @@ void FluidSolver::step() {
         info::device::max_work_group_size. Adjust the work-group size if needed.
         */
         dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-            auto d_mU_ct0 = d_mU;
-            auto d_mV_ct1 = d_mV;
-            auto d_mW_ct2 = d_mW;
+            auto d_mU_ct0 = &d_mU;
+            auto d_mV_ct1 = &d_mV;
+            auto d_mW_ct2 = &d_mW;
 
             cgh.parallel_for(sycl::nd_range<3>(gridUVW * block, block),
                              [=](sycl::nd_item<3> item_ct1) {
@@ -2066,10 +2072,10 @@ void FluidSolver::step() {
         info::device::max_work_group_size. Adjust the work-group size if needed.
         */
         dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-            auto d_mT_ct0 = d_mT;
-            auto d_mU_ct1 = d_mU;
-            auto d_mV_ct2 = d_mV;
-            auto d_mW_ct3 = d_mW;
+            auto d_mT_ct0 = &d_mT;
+            auto d_mU_ct1 = &d_mU;
+            auto d_mV_ct2 = &d_mV;
+            auto d_mW_ct3 = &d_mW;
             auto mVorticeConf_ct4 = mVorticeConf;
             auto mDx_ct5 = mDx;
             auto mDt_ct6 = mDt;
@@ -2098,9 +2104,9 @@ void FluidSolver::step() {
             (dpct::get_current_device().queues_wait_and_throw(), 0));
 /* DPCT_ORIG         swap_vel_grids_kernel <<< 1, 1 >>> (d_mU, d_mV, d_mW);*/
         dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-            auto d_mU_ct0 = d_mU;
-            auto d_mV_ct1 = d_mV;
-            auto d_mW_ct2 = d_mW;
+            auto d_mU_ct0 = &d_mU;
+            auto d_mV_ct1 = &d_mV;
+            auto d_mW_ct2 = &d_mW;
 
             cgh.parallel_for(sycl::nd_range<3>(sycl::range<3>(1, 1, 1),
                                                sycl::range<3>(1, 1, 1)),
@@ -2148,8 +2154,8 @@ void FluidSolver::step() {
         info::device::max_work_group_size. Adjust the work-group size if needed.
         */
         dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-            auto d_mT_ct0 = d_mT;
-            auto d_mV_ct1 = d_mV;
+            auto d_mT_ct0 = &d_mT;
+            auto d_mV_ct1 = &d_mV;
             auto mBuoyancy_ct2 = mBuoyancy;
             auto mGravity_ct3 = mGravity;
             auto mDt_ct4 = mDt;
@@ -2201,9 +2207,9 @@ void FluidSolver::step() {
         info::device::max_work_group_size. Adjust the work-group size if needed.
         */
         dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-            auto d_mU_ct0 = d_mU;
-            auto d_mV_ct1 = d_mV;
-            auto d_mW_ct2 = d_mW;
+            auto d_mU_ct0 = &d_mU;
+            auto d_mV_ct1 = &d_mV;
+            auto d_mW_ct2 = &d_mW;
             auto mScn_windDir_ct3 = mScn->windDir;
             auto mScn_windAmp_ct4 = mScn->windAmp;
             auto mScn_windSpeed_ct5 = mScn->windSpeed;
@@ -2262,10 +2268,10 @@ void FluidSolver::step() {
         info::device::max_work_group_size. Adjust the work-group size if needed.
         */
         dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-            auto d_mT_ct0 = d_mT;
-            auto d_mU_ct1 = d_mU;
-            auto d_mV_ct2 = d_mV;
-            auto d_mW_ct3 = d_mW;
+            auto d_mT_ct0 = &d_mT;
+            auto d_mU_ct1 = &d_mU;
+            auto d_mV_ct2 = &d_mV;
+            auto d_mW_ct3 = &d_mW;
             auto mTurbulenceAmp_ct4 = mTurbulenceAmp;
             auto mTurbulenceScale_ct5 = mTurbulenceScale;
             auto mTurbMaskTempRamp_ct6 = mTurbMaskTempRamp;
@@ -2306,9 +2312,9 @@ void FluidSolver::step() {
         info::device::max_work_group_size. Adjust the work-group size if needed.
         */
         dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-            auto d_mU_ct0 = d_mU;
-            auto d_mV_ct1 = d_mV;
-            auto d_mW_ct2 = d_mW;
+            auto d_mU_ct0 = &d_mU;
+            auto d_mV_ct1 = &d_mV;
+            auto d_mW_ct2 = &d_mW;
             auto mDx_ct3 = mDx;
             auto mDt_ct4 = mDt;
 
@@ -2359,10 +2365,10 @@ void FluidSolver::step() {
     Adjust the work-group size if needed.
     */
     dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-        auto d_mT_ct0 = d_mT;
-        auto d_mU_ct1 = d_mU;
-        auto d_mV_ct2 = d_mV;
-        auto d_mW_ct3 = d_mW;
+        auto d_mT_ct0 = &d_mT;
+        auto d_mU_ct1 = &d_mU;
+        auto d_mV_ct2 = &d_mV;
+        auto d_mW_ct3 = &d_mW;
         auto mDt_ct4 = mDt;
 
         cgh.parallel_for(sycl::nd_range<3>(gridT * block, block),
@@ -2380,10 +2386,10 @@ void FluidSolver::step() {
     Adjust the work-group size if needed.
     */
     dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-        auto d_mU_ct0 = d_mU;
-        auto d_mU_ct1 = d_mU;
-        auto d_mV_ct2 = d_mV;
-        auto d_mW_ct3 = d_mW;
+        auto d_mU_ct0 = &d_mU;
+        auto d_mU_ct1 = &d_mU;
+        auto d_mV_ct2 = &d_mV;
+        auto d_mW_ct3 = &d_mW;
         auto mDt_ct4 = mDt;
 
         cgh.parallel_for(sycl::nd_range<3>(gridU * block, block),
@@ -2401,10 +2407,10 @@ void FluidSolver::step() {
     Adjust the work-group size if needed.
     */
     dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-        auto d_mV_ct0 = d_mV;
-        auto d_mU_ct1 = d_mU;
-        auto d_mV_ct2 = d_mV;
-        auto d_mW_ct3 = d_mW;
+        auto d_mV_ct0 = &d_mV;
+        auto d_mU_ct1 = &d_mU;
+        auto d_mV_ct2 = &d_mV;
+        auto d_mW_ct3 = &d_mW;
         auto mDt_ct4 = mDt;
 
         cgh.parallel_for(sycl::nd_range<3>(gridV * block, block),
@@ -2422,10 +2428,10 @@ void FluidSolver::step() {
     Adjust the work-group size if needed.
     */
     dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-        auto d_mW_ct0 = d_mW;
-        auto d_mU_ct1 = d_mU;
-        auto d_mV_ct2 = d_mV;
-        auto d_mW_ct3 = d_mW;
+        auto d_mW_ct0 = &d_mW;
+        auto d_mU_ct1 = &d_mU;
+        auto d_mV_ct2 = &d_mV;
+        auto d_mW_ct3 = &d_mW;
         auto mDt_ct4 = mDt;
 
         cgh.parallel_for(sycl::nd_range<3>(gridW * block, block),
@@ -2457,10 +2463,10 @@ void FluidSolver::step() {
 
 /* DPCT_ORIG     swap_grids_kernel <<< 1, 1 >>> (d_mT, d_mU, d_mV, d_mW);*/
     dpct::get_default_queue().submit([&](sycl::handler &cgh) {
-        auto d_mT_ct0 = d_mT;
-        auto d_mU_ct1 = d_mU;
-        auto d_mV_ct2 = d_mV;
-        auto d_mW_ct3 = d_mW;
+        auto d_mT_ct0 = &d_mT;
+        auto d_mU_ct1 = &d_mU;
+        auto d_mV_ct2 = &d_mV;
+        auto d_mW_ct3 = &d_mW;
 
         cgh.parallel_for(
             sycl::nd_range<3>(sycl::range<3>(1, 1, 1), sycl::range<3>(1, 1, 1)),
