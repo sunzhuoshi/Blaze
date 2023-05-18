@@ -1133,7 +1133,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:245: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mTFront = (float *)sycl::malloc_shared(
+    checkCudaErrors((d_mTFront = (float *)sycl::malloc_device(
                          mByteSize, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void**)&d_mTBack, mByteSize));*/
@@ -1141,7 +1141,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:246: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mTBack = (float *)sycl::malloc_shared(
+    checkCudaErrors((d_mTBack = (float *)sycl::malloc_device(
                          mByteSize, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void**)&d_mUFront, mByteSizeU));*/
@@ -1149,7 +1149,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:247: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mUFront = (float *)sycl::malloc_shared(
+    checkCudaErrors((d_mUFront = (float *)sycl::malloc_device(
                          mByteSizeU, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void**)&d_mUBack, mByteSizeU));*/
@@ -1157,7 +1157,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:248: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mUBack = (float *)sycl::malloc_shared(
+    checkCudaErrors((d_mUBack = (float *)sycl::malloc_device(
                          mByteSizeU, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void**)&d_mVFront, mByteSizeV));*/
@@ -1165,7 +1165,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:249: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mVFront = (float *)sycl::malloc_shared(
+    checkCudaErrors((d_mVFront = (float *)sycl::malloc_device(
                          mByteSizeV, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void**)&d_mVBack, mByteSizeV));*/
@@ -1173,7 +1173,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:250: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mVBack = (float *)sycl::malloc_shared(
+    checkCudaErrors((d_mVBack = (float *)sycl::malloc_device(
                          mByteSizeV, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void**)&d_mWFront, mByteSizeW));*/
@@ -1181,7 +1181,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:251: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mWFront = (float *)sycl::malloc_shared(
+    checkCudaErrors((d_mWFront = (float *)sycl::malloc_device(
                          mByteSizeW, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void**)&d_mWBack, mByteSizeW));*/
@@ -1189,7 +1189,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:252: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mWBack = (float *)sycl::malloc_shared(
+    checkCudaErrors((d_mWBack = (float *)sycl::malloc_device(
                          mByteSizeW, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMemset(d_mTFront, 0, mByteSize));*/
@@ -1254,7 +1254,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:261: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mRhs = (float *)sycl::malloc_shared(
+    checkCudaErrors((d_mRhs = (float *)sycl::malloc_device(
                          mByteSize, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMalloc((void**)&d_mP, mByteSize));*/
@@ -1262,7 +1262,7 @@ FluidSolver::FluidSolver(Timer *tmr, SceneSettings *scn)
     DPCT1003:262: Migrated API does not return error code. (*, 0) is inserted.
     You may need to rewrite this code.
     */
-    checkCudaErrors((d_mP = (float *)sycl::malloc_shared(
+    checkCudaErrors((d_mP = (float *)sycl::malloc_device(
                          mByteSize, dpct::get_default_queue()),
                      0));
 /* DPCT_ORIG     checkCudaErrors(cudaMemset(d_mP, 0, mByteSize));*/
