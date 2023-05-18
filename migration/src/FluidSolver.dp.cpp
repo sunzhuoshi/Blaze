@@ -1573,8 +1573,7 @@ void FluidSolver::addSource() {
         if (mParticleCount > 0) {
             // clear back buffers
 /* DPCT_ORIG             dim3 block(8, 8, 8);*/
-            //sycl::range<3> block(8, 8, 8);
-            sycl::range<3> block(4, 4, 4);
+            sycl::range<3> block(8, 8, 8);
 /* DPCT_ORIG             dim3 grid((mWidth+1)/block.x+1, (mHeight+1)/block.y+1,
  * (mDepth+1)/block.z+1);*/
             sycl::range<3> grid((mDepth + 1) / block[0] + 1,
