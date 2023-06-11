@@ -1,0 +1,12 @@
+name: Manual workflow
+
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: test
+
+    steps:
+    - name: Test action
+      uses: ./
